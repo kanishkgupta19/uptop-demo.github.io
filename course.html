@@ -37,18 +37,8 @@
 
 <body class="body">
 
-  <div id="curriculum-container" class="mx-auto shadow display-none">
-    <img src="img/curriculum-banner.png" style="
-    
-    width: 95%;
-    height: 180px;
-    position: absolute;
-    border-radius:30px ;
-     filter: brightness(50%);
-  -webkit-filter: brightness(50%);
-  -moz-filter: brightness(50%);
-  -o-filter: brightness(50%);
-  -ms-filter: brightness(50%); ">
+  <div id="curriculum-container" class="animate__animated animate__fadeIn mx-auto shadow display-none">
+    <img src="img/curriculum-banner.png" id="curriculum-upper-banner">
 
     <h2 style="top:4rem;text-align:center;position:absolute;width: 95%; color:white; font-family:monsterbold; ">
       CURRICULUM<button href="#" id="curriculum-container-close" class="btn-close shadow"><i
@@ -340,6 +330,57 @@
         </div>
       </div>
   </div>
+
+  <div id="apply-now-container" class="animate__animated animate__fadeIn mx-auto shadow display-none">
+    <section class="pt-5" id="" style="height:300px;background: rgb(45,166,188);background: linear-gradient(90deg, rgba(45,166,188,1) 1%, rgba(31,168,131,1) 100%);">
+      <center class="text-white"><h4 style="font-family:monsterbold">Apply Online</h4>
+        <h3 style="font-family:monsterlight">For Program XYZ</h3></center>
+        <button href="#" id="apply-now-container-close" class="btn-close shadow" style="margin-top:-88px"><i class="fa fa-times"></i></button>
+      <BR>
+      <div class="card bordered p-5 container-bigg" style="border:0.5px solid black;">
+          <h3 style="font-family:monstermedium; font-size:22px; color:#3b404f;">I am interested in this Program.</h3>
+          <p style="font-family:monsterlight; font-size:14px;">Thank you for your interest in the INSEAD MIM Programme. In order to access the MIM application form, please complete the form below. We look forward to receiving your application!</p>
+           <div class="row" style="font-family:visueltproitalic; margin-right: 0rem;">
+            <form method="POST" id="applynow-form">
+              <div class="col-md-6">
+                  <input type="text" id="applynow-firsname" name="applynow-firstname" class="form-control apply-input p-4" placeholder="First name*" required>
+              </div>
+              <div class="col-md-6">
+                  <input type="text" id="applynow-lastname" name="applynow-lastname" class="form-control apply-input p-4" placeholder="Last name*" required>
+              </div>
+              <div class="col-md-6">
+                  <input type="number" id="applynow-contact" name="applynow-contact" class="form-control apply-input p-4" placeholder="Mobile Number*" required>
+              </div>
+              <div class="col-md-6">
+                  <input type="text" id="applynow-email" name="applynow-email" class="form-control apply-input p-4" placeholder="Email Address*" required>
+              </div>
+  
+              <div class="col-md-6">
+                  <input type="text" id="applynow-designation" name="applynow-designation" class="form-control apply-input p-4" placeholder="Designation*" required>
+              </div>
+              <div class="col-md-6">
+                  <input type="text" id="applynow-city" name="applynow-city" class="form-control apply-input p-4" placeholder="City*" required>
+              </div>
+          </div>
+          <br>
+          <p style="font-size:15px; font-family:robotolight; font-weight:lighter;">Please choose one of the buttons below to receive relevant information about the programme, other suitable INSEAD programmes offered, as well as invitations to join our events.</p>
+          <br>
+          <div style="display:flex;align-self: center;">
+              <input type="radio" name="agree" id=""> &nbsp;<span style="margin-top:-7px;font-family: monsterregular;">Yes, I agree*</span> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+              <input type="radio" name="agree" id=""> &nbsp;<span style="margin-top:-7px;font-family: monsterregular;">No, I do not consent*</span>
+          </div>
+          <br>
+          <p class="mt-2" style="align-self:center;font-family:robotolight; font-size:12px;">By clicking Submit, you agree to our <a style="color:#25d366">terms and conditions</a> and our <a style="color:#25d366">privacy policy</a>.</p>
+          <br>
+          <button style="align-self:center;width:max-content;background-color:rgba(0, 0, 0, 0.73); font-size:20px;" class="text-white btn btn-lg px-5 py-2">Submit</button>
+      </div><!--end of card-->
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+  
+  </div>
+
+
   </section>
   </div>
   <div id="rest">
@@ -357,481 +398,420 @@
       <a href="apply.html"><button class="float-right text-right btn btn-sm text-white bg-dark">Apply Now</button></a>
     </ul>
   </div>
-    <!-- Nav bar -->
-    <header>
-      <nav style="font-family: futura-medium;" class="p-3 navbar navbar-expand-lg navbar-light"
-        style="background-color: white;">
-        <a class="navbar-brand" href="#"><img style="height:40px; width:100px"
-            src="img/logo-trimmed.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Nav bar -->
+  <header style="margin-bottom:-10px;">
+    <nav id="nav-bar" class="pt-3 navbar navbar-expand-lg navbar-light"
+      style="background-color: white;">
+      <a class="navbar-brand" href="index.html">
+        <img id="uptop-logo" src="img/logo-trimmed.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="index-2.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item  mx-2">
-              <a class="nav-link " href="#" id="navbarDropdown">
-                Programs <i class="fa fa-caret-down"></i>
-              </a>
-              <div class="dropdown-programs display-none">
-                <div class="d-block d-sm-none ">
-                  <div class="row mx-auto" style="max-width: 95%;">
-                    <div class="col-md-3 col-xs-12">
-                      <div id="mba-menu1" class="dropdown-item">
-                        MBA<i class="fa fa-angle-down float-right"></i>
-                      </div>
-                      <div id="mba1" class="row display-none">
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School MBA (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School MBA (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School MBA (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School MBA (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                      </div>
-                      </a>
-                      <div id="datascience-menu1" class="dropdown-item">
-                        Data Science<i class="fa fa-angle-down float-right"></i>
-                      </div>
-                      <div id="datascience1" class="row display-none">
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School DS (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School DS (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                      </div>
-                      </a>
-                      <div id="machinelearning-menu1" class="dropdown-item">
-                        Machine Learning<i class="fa fa-angle-down float-right"></i>
-                      </div>
-                      <div id="machinelearning1" class="row display-none">
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School ML (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School ML(Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                      </div>
-                      </a>
-                      <div id="software-menu1" class="dropdown-item">
-                        Software<i class="fa fa-angle-down float-right"></i>
-                      </div>
-  
-                      <div id="software1" class="row display-none">
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School software (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School software(Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                      </div>
-                      </a>
-                      <div id="law-menu1" class="dropdown-item">
-                        Law<i class="fa fa-angle-down float-right"></i>
-                      </div>
-  
-                      <div id="law1" class="row display-none">
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School law(Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School LAW (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                      </div>
-                      </a>
-                      <div id="blockchain-menu1" class="dropdown-item">
-                        Blockchain<i class="fa fa-angle-down float-right"></i>
-                      </div>
-                      <div id="blockchain1" class="row display-none">
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School blockchain(Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School blockchain (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                      </div>
-                      </a>
-                      <div id="management-menu1" class="dropdown-item dropdown-item-last">
-                        Management<i class="fa fa-angle-down float-right"></i>
-                      </div>
-                      <div id="management1" class="row display-none">
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School management (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School management (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="dropdown-object shadow">
-                            <div class="text-center">
-                              <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                            </div>
-                            Deaking Business School management (Global)
-  
-                            <p class="dropdown-years"><i>2 Years</i></p>
-                          </div>
-                        </a>
-                      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!--<li class="nav-item mx-2">
+            <a class="nav-link" style="color: #25d37c;" href="index.html"></a>
+          </li>-->
+          <li class="nav-item  mx-3 navbarDropdown">
+            <a class="nav-link " href="#" data-hover="dropdown" data-animations="fadeIn fadeInLeft fadeInUp fadeInRight">
+              Programs <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-programs display-none">
+              <div class="d-block d-sm-none ">
+                <div class="row mx-auto" style="max-width: 95%;">
+                  <div class="col-md-3 col-xs-12">
+                    <div id="mba-menu1" class="dropdown-item">
+                      Human Resources<i class="fa fa-angle-down float-right"></i>
                     </div>
+                    <div id="mba1" class="row display-none">
+                      <a href="executive-PG-certification.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 80px;" src="img/mdi.png">
+                          </div>
+                            <p class="mt-2"><b>Executive Post Graduate Business Partner HR</b></p>
+                            <p class="dropdown-years"><i>5 Months</i></p>
+                            <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                      <a href="aphri-1.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 50px;" src="img/hrciLogo.png">
+                          </div>
+                            <p class="mt-2"><b>APHRI</b></p>
+                          <p class="dropdown-years"><i>2 Months</i></p>
+                          <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                      <a href="phri.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 50px;" src="img/hrciLogo.png">
+                          </div>
+                            <p class="mt-2"><b>PHRI</b></p>
+                          <p class="dropdown-years"><i>2 Months</i></p>
+                          <p class="admission-status-close">Admission Closed</p>
+                        </div>
+                      </a>
+                      <a href="sphri.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 50px;" src="img/hrciLogo.png">
+                          </div>
+                            <p class="mt-2"><b>SPHRI</b></p>
+                          <p class="dropdown-years"><i>2 Months</i></p>
+                          <p class="admission-status-close">Admission Close</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="datascience-menu1" class="dropdown-item">
+                      Data Science<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="datascience1" class="row display-none">
+                      <a href="data-science-ml.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-raipur.png">
+                          </div>
+                            <p class="mt-3"><b>Data Science and Machine learning in R and Python</b></p>
+                          <p class="dropdown-years"><i>5 Months</i></p>
+                          <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="machinelearning-menu1" class="dropdown-item">
+                      Sales Marketinig & Branding<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="machinelearning1" class="row display-none">
+                      <a href="product-brand-management.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 80px;" src="img/mdi.png">
+                          </div>
+                          <p class="mt-2">Executive product and Brand Management</p>
+                          <p class="dropdown-years"><i>4 Months</i></p>
+                          <p class="admission-status-close">Admission Closed</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="software-menu1" class="dropdown-item" >
+                      Operation Management<i class="fa fa-angle-down float-right"></i>
+                    </div>
+
+                    <div id="software1" class="row display-none">
+                      <a href="executive-operations-management-with-six-sigma.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-raipur.png">
+                          </div>
+                            <p class="mt-3"><b>Operation Management with Six Sigma</b></p>
+                            <p class="dropdown-years"><i>5 Months</i></p>
+                            <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                      <a href="executive-operations-management-with-six-sigma-black-belt.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 80px;" src="img/mdi.png">
+                          </div>
+                          <p class="mt-2"><b>Executive Operation Management with Black Belt Six Sigma</b></p>
+                          <p class="dropdown-years"><i>5 Months</i></p>
+                          <p class="admission-status-close">Admission Close</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="law-menu1" class="dropdown-item" >
+                      Project Management<i class="fa fa-angle-down float-right"></i>
+                    </div>
+
+                    <div id="law1" class="row display-none">
+                      <a href="Project-management-program.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/mdi.png">
+                          </div>
+                            <p class="mt-2"><b>Executive Project Management</b></p>
+                            <p class="dropdown-years"><i>5 Months</i></p>
+                            <p class="admission-status-open">Admission Close</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="blockchain-menu1" class="dropdown-item">
+                      Finance<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="blockchain1" class="row display-none">
+                      <a href="risk-management-and-corporate-finance.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-raipur.png">
+                          </div>
+                          <p class="mt-3"><b>Corporate Finance and Risk Management</b></p>
+                          <p class="dropdown-years"><i>4 Months</i></p>
+                          <p class="admission-status-close">Admission Closed</p>
+                        </div>
+                      </a>
+                    </div>
+                    
+                    <div id="management-menu1" class="dropdown-item dropdown-item-last">
+                      Entrepreneurship<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="management1" class="row display-none">
+                      <a href="executive-entrepreneurship-program.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                          </div>
+                          <p class="mt-2"><b>Executive Entrepreneurship Program</b></p>
+                          <p class="dropdown-years"><i>4 Months</i></p>
+                          <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div id="executive-menu1" class="dropdown-item dropdown-item-last">
+                      Executive PG<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="executive1" class="row display-none">
+                      <a href="iimrohtak-executive-postgraduation-program.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                          </div>
+                          <p class="mt-2"><b>Executive PG Diploma Program in Management</b></p>
+                          <p class="dropdown-years"><i>1 Year</i></p>
+                          <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                    </div>
+
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="contactus.html" tabindex="-1" aria-disabled="true">Contact</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="aboutus.html" tabindex="-1" aria-disabled="true">About</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a style="color: black;" class="nav-link font-weight-bolder" href="#" tabindex="-1"
-                aria-disabled="true">Refer & Earn ₹</a>
-            </li>
-          </ul>
-          <button class="btn bg-dark text-white my-2 my-sm-0 " type="submit">Student Portal</button>
-        </div>
-      </nav>
-    </header>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-3 text-align-right">
+            <a class="nav-link" href="#" style="font-size:17px; margin-top:-2px"><i class="fab fa-whatsapp"></i></a>
+          </li>
+          <li class="nav-item mx-3 text-align-right">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="contactus.html" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="aboutus.html" tabindex="-1" aria-disabled="true">About</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#" tabindex="-1"
+              aria-disabled="true">Refer & Earn ₹</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#" tabindex="-1"
+              aria-disabled="true">Student Portal</a>
+          </li>
+        </ul>
+        <!--<button class="btn bg-dark text-white my-2 my-sm-0 " type="submit">Student Portal</button>-->
+      </div>
+    </nav>
+  </header>
 
-    <section class="display-none dropdown-programs">
-      <div class="d-none d-sm-block">
-        <div class="row mx-auto" style="max-width: 95%;">
-          <div class="col-md-3 col-xs-12">
-            <div id="mba-menu" class="dropdown-item">
-              MBA<i class="fa fa-angle-right float-right"></i>
-            </div>
-            <div id="datascience-menu" class="dropdown-item">
-              Data Science<i class="fa fa-angle-right float-right"></i>
-            </div>
-            <div id="machinelearning-menu" class="dropdown-item">
-              Machine Learning<i class="fa fa-angle-right float-right"></i>
-            </div>
-            <div id="software-menu" class="dropdown-item">
-              Software<i class="fa fa-angle-right float-right"></i>
-            </div>
-            <div id="law-menu" class="dropdown-item">
-              Law<i class="fa fa-angle-right float-right"></i>
-            </div>
-            <div id="blockchain-menu" class="dropdown-item">
-              Blockchain<i class="fa fa-angle-right float-right"></i>
-            </div>
-            <div id="management-menu" class="dropdown-item dropdown-item-last">
-              Management<i class="fa fa-angle-right float-right"></i>
-            </div>
+  <section class="mt-4 display-none dropdown-programs navbarDropdown2">
+    <div class="d-none d-sm-block">
+      <div class="row mx-auto" style="max-width: 95%;">
+        <div class="col-md-3 col-xs-12">
+          <div id="mba-menu" class="hover-dropdow-item dropdown-item dropdown-item-active">
+            Human Resources<i class="fa fa-angle-right float-right"></i>
           </div>
-          <div class="col-md-9 col-xs-12">
-            <div id="mba" class="row">
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School MBA (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
+          <div id="datascience-menu" class="hover-dropdow-item dropdown-item">
+            Data Science<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="machinelearning-menu" class="hover-dropdow-item dropdown-item">
+            Sales Marketing & Branding<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="software-menu" class="hover-dropdow-item dropdown-item">
+            Operation Management<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="law-menu" class="hover-dropdow-item dropdown-item">
+            Project Management<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="blockchain-menu" class="hover-dropdow-item dropdown-item">
+            Finance<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="management-menu" class="hover-dropdow-item dropdown-item dropdown-item">
+            Entrepreneurship<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="executive-menu" class="hover-dropdow-item dropdown-item dropdown-item-last">
+            Executive PG 1 Year<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="executive2-menu" class="hover-dropdow-item dropdown-item dropdown-item-last">
+            Executive PG 2 Years<i class="fa fa-angle-right float-right"></i>
+          </div>
+        </div>
+        <div class="col-md-9 col-xs-12">
+          <div id="mba" class="row">
+            <a href="executive-PG-certification.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 80px;" src="img/mdi.png">
                 </div>
-  
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School MBA (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School MBA (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School MBA (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-              </a>
-            </div>
-            <div id="datascience" class="row display-none">
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School DS (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School DS (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-            </div>
-  
-            <div id="machinelearning" class="row display-none">
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School ML (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School ML(Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-              </a>
-            </div>
-            <div id="software" class="row display-none">
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School software (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School software(Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-            </div>
+                  <p class="mt-2"><b>Executive Post Graduate Business Partner HR</b></p>
+                  <p class="dropdown-years"><i>5 Months</i></p>
+                  <p class="admission-status-open">Admission Open</p>
+              </div>
             </a>
-            <div id="law" class="row display-none">
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School law(Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
+            <a href="aphri-1.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 50px;" src="img/hrciLogo.png">
                 </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School LAW (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-            </div>
+                  <p class="mt-2"><b>APHRI</b></p>
+                <p class="dropdown-years"><i>2 Months</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
             </a>
-            <div id="blockchain" class="row display-none">
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School blockchain(Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
+            <a href="phri.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 50px;" src="img/hrciLogo.png">
                 </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School blockchain (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
-                </div>
-            </div>
+                  <p class="mt-2"><b>PHRI</b></p>
+                <p class="dropdown-years"><i>2 Months</i></p>
+                <p class="admission-status-close">Admission Closed</p>
+              </div>
             </a>
-            <div id="management" class="row display-none">
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School management (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
+            <a href="sphri.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 50px;" src="img/hrciLogo.png">
                 </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School management (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
+                  <p class="mt-2"><b>SPHRI</b></p>
+                <p class="dropdown-years"><i>2 Months</i></p>
+                <p class="admission-status-close">Admission Close</p>
+              </div>
+            </a>
+          </div>
+          <div id="datascience" class="row display-none">
+            <a href="data-science-ml.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-raipur.png">
                 </div>
-              </a>
-              <a href="#">
-                <div class="dropdown-object shadow">
-                  <div class="text-center">
-                    <img style="width: 70px;" src="img/8b5609fde099e6814b01833364027e37%403x.png">
-                  </div>
-                  Deaking Business School management (Global)
-  
-                  <p class="dropdown-years"><i>2 Years</i></p>
+                  <p class="mt-3"><b>Data Science and Machine learning in R and Python</b></p>
+                <p class="dropdown-years"><i>5 Months</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+          </div>
+
+          <div id="machinelearning" class="row display-none">
+            <a href="product-brand-management.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 80px;" src="img/mdi.png">
                 </div>
-              </a>
-            </div>
+                <p class="mt-2">Executive product and Brand Management</p>
+                <p class="dropdown-years"><i>4 Months</i></p>
+                <p class="admission-status-close">Admission Closed</p>
+              </div>
+            </a>
+          </div>
+          <div id="software" class="row display-none">
+            <a href="executive-operations-management-with-six-sigma.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-raipur.png">
+                </div>
+                  <p class="mt-3"><b>Operation Management with Six Sigma</b></p>
+                  <p class="dropdown-years"><i>5 Months</i></p>
+                  <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+            <a href="executive-operations-management-with-six-sigma-black-belt.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 80px;" src="img/mdi.png">
+                </div>
+                <p class="mt-2"><b>Executive Operation Management with Black Belt Six Sigma</b></p>
+                <p class="dropdown-years"><i>5 Months</i></p>
+                <p class="admission-status-close">Admission Close</p>
+              </div>
+            </a>
+          </div>
+          <div id="law" class="row display-none">
+            <a href="Project-management-program.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/mdi.png">
+                </div>
+                  <p class="mt-2"><b>Executive Project Management</b></p>
+                  <p class="dropdown-years"><i>5 Months</i></p>
+                  <p class="admission-status-open">Admission Close</p>
+              </div>
+            </a>
+          </div>
+          </a>
+          <div id="blockchain" class="row display-none">
+            <a href="risk-management-and-corporate-finance.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-raipur.png">
+                </div>
+                <p class="mt-3"><b>Corporate Finance and Risk Management</b></p>
+                <p class="dropdown-years"><i>4 Months</i></p>
+                <p class="admission-status-close">Admission Closed</p>
+              </div>
+            </a>
+          </div>
+          </a>
+          <div id="management" class="row display-none">
+            <a href="executive-entrepreneurship-program.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                </div>
+                <p class="mt-2"><b>Executive Entrepreneurship Program</b></p>
+                <p class="dropdown-years"><i>4 Months</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+          </div>
+          <div id="executive" class="row display-none">
+            <a href="iimrohtak-executive-postgraduation-program.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                </div>
+                <p class="mt-2"><b>Executive PG Diploma Program in Management</b></p>
+                <p class="dropdown-years"><i>1 Year</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+          </div>
+          <div id="executive2" class="row display-none">
+            <a href="epgdsm.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                </div>
+                <p class="mt-2"><b>Executive PG Diploma Program in Sports Management</b></p>
+                <p class="dropdown-years"><i>2 Years</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-  
-    </section>
-  
+    </div>
 
-    <!-- Nav Ends Here-->
+  </section>
+
+  <!-- Nav Ends Here-->
+
     <div class="side-container side-container-invisible row">
       <div class="side-box col-2" id="sidemenubutton">
         <i id="arrow-side" class="fa fa-2x fa-angle-left"></i>
@@ -839,24 +819,24 @@
 
       <div class="side_contain p-2 col-3">
         <div class="row">
-          <div style="line-height: 10px;align-self: center;text-align:center;" class="col-12">
+          <div style="line-height: 10px;align-self: center;text-align:center;" class="apply-now-menu col-12">
             <i class="fa fa-2x fa-chair"></i>
             <br>
             <p style="font-size: 10px;">Reserving<br>seat</p>
           </div>
-          <div style="line-height: 10px;align-self: center;text-align:center;" class="col-12">
+          <div style="line-height: 10px;align-self: center;text-align:center;" class="apply-now-menu col-12">
             <i class="fa fa-2x fa-phone"></i>
             <p style="font-size: 10px;">Contact us</p>
           </div>
-          <div style="line-height: 10px;align-self: center;text-align:center;" class="col-12">
+          <div style="line-height: 10px;align-self: center;text-align:center;" class="apply-now-menu col-12">
             <i class="fa fa-2x fa-calendar-week"></i>
             <p style="font-size: 10px;">Calender</p>
           </div>
-          <div style="line-height: 10px;align-self: center;text-align:center;" class="col-12">
+          <div style="line-height: 10px;align-self: center;text-align:center;" class="apply-now-menu col-12">
             <i class="fa fa-2x fa-download"></i>
             <p style="font-size: 10px;">Download<br>Brochure</p>
           </div>
-          <div style="line-height: 10px;align-self: center;text-align:center;" class="col-12">
+          <div style="line-height: 10px;align-self: center;text-align:center;" class="apply-now-menu col-12">
             <i class="fa fa-2x fa-eye"></i>
             <p style="font-size: 10px;">See<br>Blogs</p>
           </div>
@@ -865,7 +845,7 @@
     </div>
 
 <!-------------------------------------------------BANNER------------------------------------------------->
-    <section id="banner" class="mx-auto">
+    <section id="banner" class="mt-3 mx-auto">
       <img class="squarecut" src="img/squarecut.png">
       <div style="z-index:2;position: relative;color: white;" class="row p-5">
         <div class="col-md-8">
@@ -896,7 +876,7 @@
             </div>
             <div class="py-4">
               <center>
-                <button style="width:60%" class="btn btn-block bg-dark text-white py-2">Apply Now</button>
+                <button style="width:60%" class="apply-now-menu btn btn-block bg-dark text-white py-2">Apply Now</button>
                 <button style="width:60%" class="btn btn-block py-2 border-dark">Email Me Info..</button>
               </center>
             </div>

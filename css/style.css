@@ -37,29 +37,66 @@ body {
   border-radius: 30px;
 }
 
+#nav-bar{
+  font-family: futura-medium; 
+  padding-left:8rem; 
+  padding-right:8rem;
+  padding-top:4px !important;
+  padding-bottom:2px !important;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.width-80{
+  width:80%!important;
+}
+
 .header-banner {
-  background: rgb(44, 166, 186);
+  /*background: rgb(44, 166, 186);
   background: linear-gradient(
     94deg,
     rgba(44, 166, 186, 1) 0%,
     rgba(33, 167, 139, 1) 100%
   );
+  background: #1fa883;*/
+  background: rgb(67,158,201);
+background: linear-gradient(45deg, rgba(67,158,201,1) 0%, rgba(109,227,152,1) 70%);
   margin: auto;
+  height: 37rem;
   /*width: 96%;
   border-radius: 30px;*/
 }
 
 .rolling-text{
-  background: rgb(44, 166, 186);
-  background: linear-gradient(
-    94deg,
-    rgba(44, 166, 186, 1) 0%,
-    rgba(33, 167, 139, 1) 100%
-  );
+  background: rgb(67,158,201);
+  background: linear-gradient(45deg, rgba(67,158,201,1) 0%, rgba(109,227,152,1) 70%);
   color:white;
-  font-size:16px; 
-  font-weight:bold;
+  font-size:26px; 
   width:100%;
+  height: 55px;
+  display: inline-table;
+}
+
+.learn-more-btn{
+  background: transparent;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    border: 1px solid white;
+    padding-top: 0.2rem;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 21px;
+    color: white;
+    padding-bottom: 0.22rem;
+}
+
+.career-stage-rectangle{
+  border: 2.4px solid black;
+  height: 133px;
+  width: 70%;
+  margin-top: -24px;
+  margin-left: 16%;
+  position: absolute;
 }
 
 /*---------- programs carausel -------*/
@@ -81,6 +118,11 @@ body {
   object-fit: cover;
 }
 
+.padding-bigg{
+  padding-left:7rem;
+  padding-right: 7rem;
+}
+
 .card-body {
   text-align: -webkit-left;
   text-align: -moz-left;
@@ -99,9 +141,33 @@ body {
   .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
-  .header-banner {
-    height: 200%;
+  #nav-bar{
+    padding-left:2rem; 
+    padding-right:2rem;
   }
+  .width-80{
+    width:100% !important;
+  }
+
+  .apply-input{
+    width:100% !important;
+  }
+
+  #apply-now-container{
+    height: 75rem !important;
+  }
+
+  .padding-bigg{
+    padding-left:1rem;
+    padding-right: 1rem;
+  }
+
+  .header-banner-content{
+    padding: 1.5rem !important;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+  }
+
 }
 
 .carousel-inner .carousel-item.active,
@@ -123,13 +189,13 @@ body {
   border-top: #fff 1px solid;
   border-left: 0px;
 }
+
+
 /* display 3 */
 .path-text {
   background-color: #f5fdff;
 }
-.header-banner {
-  height: 900px;
-}
+
 .dis-none-small {
   display: none;
 }
@@ -150,9 +216,6 @@ body {
   }
   .dis-none-small {
     display: block;
-  }
-  .header-banner {
-    height: 400px;
   }
   .upper-path {
     transform: translateY(-210px);
@@ -616,6 +679,36 @@ div.application-date {
   float: right;
   color: #fff;
 }
+
+.search-box-button{
+  background-color: #585858;
+  border: none;
+  outline: none;
+  float: right;
+  color: #fff;
+}
+
+.career-stage-box{
+  font-family: monsterbold;
+    color: #585858;
+    padding-left: 6px;
+    font-weight: 600;
+    font-size: 22px;
+    background-color:whitesmoke;
+    padding-right: 6px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  box-shadow: 0rem 0rem 0.5rem 0.2rem rgba(0,0,0,.20)!important;
+}
+.career-stage-box:hover{
+ background-color: #1FA883;
+ cursor: pointer;
+ color:white;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -712,13 +805,21 @@ svg {
   box-shadow: 3px -3px 20px rgba(0, 0, 0, 0.2),
     -3px -3px 20px rgba(0, 0, 0, 0.2);
 }
+
+.nav-item{
+  outline: none !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus{
+  outline: none !important; 
+}
 .chat-container-invisible {
   transform: translateY(200px);
-  z-index: 99;
+  z-index: 9999;
 }
 .chat-container-visible {
   transform: translateY(0px);
-  z-index: 99;
+  z-index: 9999;
 }
 .chat-box {
   width: 260px;
@@ -729,6 +830,22 @@ svg {
   padding: 15px;
   color: #fff;
 }
+
+.image-hover-zoom {
+  transition: transform .2s;
+  width: 100%;
+  margin: 0 auto;
+  text-align:center;
+  cursor: pointer;
+}
+
+.image-hover-zoom:hover {
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3); 
+}
+
+
 
 /*----------------SLIDER------------------*/
 .slider {
@@ -1125,6 +1242,17 @@ Customize https://plyr.io
   .scroll-adder {
     padding-left: 1000px;
   }
+  .hide-items-mobile{
+    display: none !important;
+  }
+
+.header-banner{
+  height:auto !important;
+}
+.u-image-back{
+  display: none;
+}
+
   #curriculum-subtitle{
     width: 70%;
   }
@@ -1272,31 +1400,65 @@ a,a:hover{
   padding-bottom: 10px;
   font-weight: bold;
   font-family: monsterregular;
+  font-size:14px;
 }
 .dropdown-item:hover {
-  background-color: #9bfca6;
-  color: #20ac66;
+  background: rgb(44, 166, 186);
+  background: linear-gradient( 94deg, rgba(44, 166, 186, 1) 0%, rgba(33, 167, 139, 1) 100% );
+  color: white;
+  font-size:14px;
 }
 .dropdown-item-active {
-  background-color: #9bfca6;
-  color: #20ac66;
+  background: rgb(44, 166, 186);
+  background: linear-gradient( 94deg, rgba(44, 166, 186, 1) 0%, rgba(33, 167, 139, 1) 100% );
+  color: white;
+  font-size:14px;
 }
 .dropdown-item-last {
   border-bottom: 0;
 }
+
+#uptop-logo{
+  height:40px;
+   width:130px
+}
 .dropdown-object {
   margin: 10px;
-  line-height: 13px;
-  width: 180px;
-  height: 160px;
-  padding: 30px;
-  font-size: smaller;
-  border-radius: 20px;
-  font-weight: 500;
+    line-height: 13px;
+    width: 180px;
+    box-shadow: 0.3rem 0rem 0.1rem;
+    height: 15rem;
+    padding: 30px;
+    font-size: smaller;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-weight: 500;
+}
+
+.dropdown-object:hover{
+  background-color: whitesmoke;
 }
 .dropdown-years {
   font-weight: 300;
+  margin-top:-10px;
 }
+
+.admission-status-open{
+  color:green;
+  font-weight: bold;
+}
+
+.admission-status-close{
+  color:red;
+  font-weight: bold;
+}
+
+.header-banner-content{
+  padding: 3rem;
+    margin-left: 115px;
+    margin-right: -107px;
+}
+
 .display-none {
   display: none;
 }
@@ -1316,6 +1478,27 @@ a,a:hover{
   outline-style: none;
 }
 #curriculum-container {
+  width: 95%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  z-index: 123;
+  background-color: #fff;
+}
+
+#curriculum-upper-banner{
+  width: 95%;
+  height: 180px;
+  position: absolute;
+  border-radius:30px ;
+  filter: brightness(50%);
+  -webkit-filter:brightness(50%);
+  -moz-filter:brightness(50%);
+  -o-filter: brightness(50%);
+  -ms-filter: brightness(50%); 
+}
+
+#apply-now-container {
   width: 95%;
   margin-top: 30px;
   margin-bottom: 30px;

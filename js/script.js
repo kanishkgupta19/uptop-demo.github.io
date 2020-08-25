@@ -1,7 +1,7 @@
 $(document).ready(function(){
   function showMenu(menuName) {
-    menuList=['mba','datascience','machinelearning','blockchain','law','software','management'];
-    $('#'+menuName+'-menu').click(function(){
+    menuList=['mba','datascience','machinelearning','blockchain','law','software','management', 'executive', 'executive2'];
+    $('#'+menuName+'-menu').hover(function(){
       for (index = 0; index < menuList.length; index++) { 
         if(!($('#'+menuList[index]).hasClass("display-none"))){
           $('#'+menuList[index]).addClass("display-none");
@@ -11,7 +11,7 @@ $(document).ready(function(){
         $('#'+menuName+'-menu').addClass("dropdown-item-active");
     } 
     })
-    $('#'+menuName+'-menu1').click(function(){
+    $('#'+menuName+'-menu1').hover(function(){
       for (index = 0; index < menuList.length; index++) { 
         if(!($('#'+menuList[index]+'1').hasClass("display-none"))&&menuList[index]!=menuName){
           $('#'+menuList[index]+'1').addClass("display-none");
@@ -24,7 +24,7 @@ $(document).ready(function(){
     } 
     })
 }
-menuList=['mba','datascience','machinelearning','blockchain','law','software','management'];
+menuList=['mba','datascience','machinelearning','blockchain','law','software','management', 'executive', 'executive2'];
 for (index = 0; index < menuList.length; index++) { 
   showMenu(menuList[index]);
 }
@@ -68,7 +68,16 @@ for (index = 0; index < menuListIndex.length; index++) {
     $('.body').css("background-color","#585858");
     $('.top-nav').addClass("display-none");
 
-  })
+  });
+
+  $('.apply-now-menu').click(function(){
+    $('#apply-now-container').removeClass("display-none");
+    $('#rest').addClass("display-none");
+    $('.body').css("background-color","#585858");
+    $('.top-nav').addClass("display-none");
+
+  });
+
   $('#curriculum-container-close').click(function(){
     $('#curriculum-container').addClass("display-none");
     $('#rest').removeClass("display-none");
@@ -79,11 +88,33 @@ for (index = 0; index < menuListIndex.length; index++) {
       else{
         $('.top-nav').addClass("display-none");
       }
-  })
-  $('#navbarDropdown').click(function(){
+  });
+
+  $('#apply-now-container-close').click(function(){
+    $('#apply-now-container').addClass("display-none");
+    $('#rest').removeClass("display-none");
+    $('.body').css("background-color","white");
+    if ($(this).scrollTop() >$('#banner').height()){  
+        $('.top-nav').removeClass("display-none");
+      }
+      else{
+        $('.top-nav').addClass("display-none");
+      }
+  });
+
+
+
+  $('.navbarDropdown').mouseenter(function(){
     $('.dropdown-programs').toggleClass("display-none");
     $('#navbarDropdown').find("i").toggleClass("fa-caret-up");
   })
+
+  $('.navbarDropdown2').mouseleave(function(){
+    $('.dropdown-programs').toggleClass("display-none");
+    $('#navbarDropdown').find("i").toggleClass("fa-caret-up");
+  })
+
+
   $('#headingOne').click(function(){
     $('#arrow2').removeClass("fa-angle-up");
     $('#arrow3').removeClass("fa-angle-up");

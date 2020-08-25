@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
+<!-- Mirrored from uptoptest.herokuapp.com/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 13 Aug 2020 18:55:10 GMT -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0,width=device-width">
@@ -27,12 +29,14 @@
 </style>
 
 <body>
+  <div class="rolling-text">
+    <marquee>SAMPLE ROLLING TEXT DISPLAYED HERE</marquee>
+  </div>
   <!-- Nav bar -->
   <header>
-    <nav style="font-family: futura-medium;" class="p-3 navbar navbar-expand-lg navbar-light"
+    <nav style="font-family: futura-medium;" class="py-3 px-5 navbar navbar-expand-lg navbar-light"
       style="background-color: white;">
-      <a class="navbar-brand" href="#"><img style="height:40px; width:100px"
-          src="img/logo-trimmed.png"></a>
+      <a class="navbar-brand" href="index.html"><img style="height:30px; width:80px" src="img/logo-trimmed.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,9 +44,9 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item mx-2">
-            <a class="nav-link" style="color: #25d37c;" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
+          <!--<li class="nav-item mx-2">
+            <a class="nav-link" style="color: #25d37c;" href="index.html"></a>
+          </li>-->
           <li class="nav-item  mx-2">
             <a class="nav-link " href="#" id="navbarDropdown">
               Programs <i class="fa fa-caret-down"></i>
@@ -146,7 +150,7 @@
                         </div>
                     </div>
                     </a>
-                    <div id="software-menu1" class="dropdown-item">
+                    <div id="software-menu1" class="dropdown-item" >
                       Software<i class="fa fa-angle-down float-right"></i>
                     </div>
 
@@ -172,7 +176,7 @@
                         </div>
                     </div>
                     </a>
-                    <div id="law-menu1" class="dropdown-item">
+                    <div id="law-menu1" class="dropdown-item" >
                       Law<i class="fa fa-angle-down float-right"></i>
                     </div>
 
@@ -263,7 +267,9 @@
               </div>
             </div>
           </li>
-          <li class="nav-item mx-2">
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-2 text-align-right">
             <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item mx-2">
@@ -273,11 +279,15 @@
             <a class="nav-link" href="aboutus.html" tabindex="-1" aria-disabled="true">About</a>
           </li>
           <li class="nav-item mx-2">
-            <a style="color: black;" class="nav-link font-weight-bolder" href="#" tabindex="-1"
+            <a class="nav-link" href="#" tabindex="-1"
               aria-disabled="true">Refer & Earn ₹</a>
           </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#" tabindex="-1"
+              aria-disabled="true">Student Portal</a>
+          </li>
         </ul>
-        <button class="btn bg-dark text-white my-2 my-sm-0 " type="submit">Student Portal</button>
+        <!--<button class="btn bg-dark text-white my-2 my-sm-0 " type="submit">Student Portal</button>-->
       </div>
     </nav>
   </header>
@@ -505,22 +515,48 @@
   <!-- Carausal Starts -->
 
   <div id="carouselExampleSlidesOnly" style="margin: auto;" class="mt-3 carousel header-banner" data-ride="carousel">
-    <img src="img/Mask%20Group%2018.png" style="width: 100%; height:100%; position: absolute;">
+    <img class="hide-items-mobile" src="img/Mask%20Group%2018.png" style="width: 100%; height:100%; position: absolute;">
     <div class="row">
       <div class="col-md-6 col-xs-12 p-5">
         <h2 style="color:white;padding-top: 50px;"><b><i>upTop Your Carreer</i></b></h2><br>
-        <p class="text-white" style="font-size:19px; font-weight:500; font-family: futura-medium">India's 1st ever
-          self-investment platform for working professionals to invest on themselves to learn, certify and become
-          industry relevant.</p>
+        <p class="text-white" style="font-size:28px; font-weight:bold; font-family: futura-medium">
+          Prime Executive Education Platform to Advance
+        </p>
+        <ul style="color:black; font-size:28px; font-weight:500; font-family: futura-medium">
+          <li>Befit Industry relevant forever</li>
+          <li>Career Guidance Assistance</li>
+          <li>Top B schools to uplift your career.</li>
+        </ul>
         <br><br>
 
-        <div class="search-box">
-          <input type="text" placeholder="Search your courses">
+        <div class="search5-box">
+          <!--<input type="text" placeholder="Search your courses">
 
-          <button><i class="fa fa-search"></i></button>
+          <button><i class="fa fa-search"></i></button>-->
+          <div class="row mx-auto mt-3">
+            <div class="" id="university-partner" style="background-color: white; width: 100%;">
+              <i>Our University Partners:</i>
+              <br>
+              <div id="logos" style="display:flex; margin-top:10px; justify-content: center;">
+                <img class="mx-3" src="img/iim-raipur.png" style="height:30px; width:30px">
+                <img class="mx-3" src="img/hrci.png" style="height:30px; width:30px">
+                <img class="mx-3" src="img/mdi.png" style="height:30px; width:30px"><br>
+                <img class="mx-3" src="img/iim-rohtak-logo.png" style="height:30px; width:30px">
+                <img class="mx-3" src="img/imi.png" style="height:30px; width:30px">
+                <img class="mx-3" src="img/spjain.png" style="height:30px; width:30px">
+              </div>
+            </div>
+        
+          </div>
         </div>
+
+        <!--<img src="img/arrow-1-back.png" style="position:absolute; height:257px; margin-right:10px;">-->
+        <!--<img src="img/down-arrow-back.png" style="position: absolute;height: 135px; left: 243px;">
+        <img src="img/long-down-arrow.png" style="position: absolute;height: 16rem;right: -680px;margin-top: -93px;">-->
       </div>
+      <br><br><br>
       <div class="col-md-5  col-xs-11 mx-auto" style="height: 400px;">
+        <img src="img/u-background2.png" style="max-height: 600px;position: absolute; top:-21px; right:0; width:259%;">
         <!-- Card Stack-->
         <div class="card-stack">
           <a class="buttons prev" href="#"><i class="fa fa-angle-left"></i></a>
@@ -619,29 +655,49 @@
           <a class="top-slider3" href="#top-slide-3"></a>
         </div>
       </div>
+      
     </div>
+    <!------------CARRER STAGES ENDS------->
+  <center><b style="font-family:monsterregular; font-size:2rem;">CAREER STAGE</b></center>
+  <br>
+<div class="row mx-auto" id="career-stages" style="margin-bottom:7rem; place-content: center;">
+  <div class="col-md-2">
+    <div class="image-hover-zoom">
+      <a href="aboutus.html"><img src="img/career-cycle-01.png" style="width:100%;"></a>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="image-hover-zoom">
+      <a href="aboutus.html"><img src="img/career-cycle-02.png" style="width:100%;"></a>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="image-hover-zoom">
+      <a href="aboutus.html"><img src="img/career-cycle-03.png" style="width:100%;"></a>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="image-hover-zoom">
+      <a href="aboutus.html"><img src="img/career-cycle-04.png" style="width:100%;"></a>
+    </div>
+  </div>
+
+  <div class="col-md-2">
+    <div class="image-hover-zoom">
+      <a href="aboutus.html"><img src="img/career-cycle-05.png" style="width:100%;"></a>
+    </div>
+  </div>
+
+</div>
+<!---------------------------CARRER STAGES ENDS----------------->
     <br><br><br><br>
   </div>
   <!--row-->
   </div>
   <!-- carausal ends -->
-
-  <!--University PArtners-->
-  <div class="row mx-auto mt-3">
-    <div class="col-md-4 col-xs-12" id="university-partner">
-      <i>Our University Partners:</i>
-      <br>
-      <div id="logos" style="display:flex; margin-top:10px; justify-content: center;">
-        <img class="mx-3" src="img/iim-raipur.png" style="height:30px; width:30px">
-        <img class="mx-3" src="img/hrci.png" style="height:30px; width:30px">
-        <img class="mx-3" src="img/mdi.png" style="height:30px; width:30px">
-        <img class="mx-3" src="img/iim-rohtak-logo.png" style="height:30px; width:30px">
-        <img class="mx-3" src="img/imi.png" style="height:30px; width:30px">
-        <img class="mx-3" src="img/spjain.png" style="height:30px; width:30px">
-      </div>
-    </div>
-
-  </div>
+<br><br><br>
+ 
+  <br><br><br>
   <div class="chat-container chat-container-invisible">
     <div class="chat-box">
       <div class="row">
@@ -692,7 +748,7 @@
 
 
   <!--Programs-->
-  <section>
+  <section style="background-color: #f5fdff;">
     <div class="path-text" style=" width:100%">
       <div class="upper-path">
         <svg viewBox="0 0 1440 320">
@@ -705,159 +761,209 @@
       <img height="50%" width="50%" style="position: absolute;right: 0;" src="img/spiral-1.png">
       <h3 class="m-5" style="position: relative;"><b>Programs In Demand</b></h3>
       <div class="d-block d-sm-none">
-        <div class="row text-dark" style="background-color: #f5fdff">
-          <div class="col-md-3 col-xs-12 text-dark" id="programs-side-menu">
-            <div class="nav flex-column nav-pills p-3 ml-3" id="v-pills-tab">
-              <div class="nav-link p-3" id="pills-home-tab"><i class="fas fa-lg fa-caret-right mr-3"></i> Project Management </div>
+        <div class="row text-dark mx-auto" style="background-color: #f5fdff">
+          <div class="col-md-3 col-xs-12 text-dark" id="programs-side-menu-mobile">
+            <div class="nav flex-column nav-pills" id="v-pills-tab">
+              <div class="nav-link p-3" id="pills-home-tab"><i class="fas fa-lg fa-caret-right mr-3"></i>
+                 PROJECT MANAGEMENT </div>
 
               <!-- Project Management-->
               <div class="display-none" id="pills-home">
                 <div class="container mb-2">
                   <div class="row d-flex align-items-center">
-                    <div class="col-10">
-                      <!--Start carousel-->
-                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="col-12">
+                      <!--------------NEW Carousel----------->
+                          <div id="carouselExampleIndicators" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
 
-                        <div class="carousel-inner">
-                          <div class="carousel-item  active">
-                            <div class="row">
-                              <div class="col-md-4 col-xs-12">
-                                <div class="card" style="width: 100%;">
-                                  <img src="img/univ-1.jpg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Project Management Course</h5>
-                                    <p class="card-text"></p>
-                                    <div class="row">
-                                      <div class="col-md-8">Institute<BR><b>IIM Raipur</b> </div>
-                                      <div class="col-md-4"><img src="img/iim-raipur.png" height=50 width=50 class="">
+                            <!--Controls--
+                            <div class="controls-top">
+                            </div>
+                            ---.Controls-->
+                            <br>
+                            <!-- Indicators -->
+                            <!--<ol class="carousel-indicators" style="position:inherit;">
+                              <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel-example-multi" data-slide-to="1"></li>
+                              <li data-target="#carousel-example-multi" data-slide-to="2"></li>
+                              <li data-target="#carousel-example-multi" data-slide-to="3"></li>
+                              <li data-target="#carousel-example-multi" data-slide-to="4"></li>
+                              <li data-target="#carousel-example-multi" data-slide-to="5"></li>
+                            </ol>-->
+                            <!--/.Indicators-->
+
+                            <div class="carousel-inner v-2" role="listbox">
+
+                              <div class="carousel-item active">
+                                <div class="col-12 col-md-4">
+                                  <div class="card" style="width: 100%;">
+                                    <img src="img/univ-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Project Management Course</h5>
+                                      <p class="card-text"></p>
+                                      <div class="row">
+                                        <div class="col-md-8">Institute<BR><b>IIM Raipur</b> </div>
+                                        <div class="col-md-4"><img src="img/iim-raipur.png" height=50 width=50 class="">
+                                        </div>
                                       </div>
+                                      Duration: <br><b>5 Months</b>
+                                      <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                     </div>
-                                    Duration: <br><b>5 Months</b> <br><br>
-                                    <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                   </div>
                                 </div>
                               </div>
-                              <!--col-md-4-->
-                              <div class="col-md-4 col-xs-12">
-                                <div class="card" style="width: 100%;">
-                                  <img src="img/univ-2.jpg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Project Management Course</h5>
-                                    <p class="card-text"></p>
-                                    <div class="row">
-                                      <div class="col-md-8">Institute<BR><b>IIM Rohtak</b></div>
-                                      <div class="col-md-4"><img src="img/iim-rohtak-logo.png" height=50 width=50
-                                          class=""></div>
+                              <div class="carousel-item">
+                                <div class="col-12 col-md-4">
+                                  <div class="card" style="width: 100%;">
+                                    <img src="img/univ-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Project Management Course</h5>
+                                      <p class="card-text"></p>
+                                      <div class="row">
+                                        <div class="col-md-8">Institute<BR><b>IIM Raipur</b> </div>
+                                        <div class="col-md-4"><img src="img/iim-raipur.png" height=50 width=50 class="">
+                                        </div>
+                                      </div>
+                                      Duration: <br><b>5 Months</b>
+                                      <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                     </div>
-                                    Duration: <br><b>5 Months</b> <br><br>
-                                    <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                   </div>
                                 </div>
                               </div>
-                              <!--col-md-4-->
-                              <div class="col-md-4 col-xs-12">
-                                <div class="card" style="width: 100%;">
-                                  <img src="img/univ-3.jpg" class="card-img-top" alt="...">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Project Management Course</h5>
-                                    <p class="card-text"></p>
-                                    <div class="row">
-                                      <div class="col-md-8">Institute<BR><b>IMI</b></div>
-                                      <div class="col-md-4"><img src="img/imi.png" height=50 width=50 class=""></div>
+                              <div class="carousel-item">
+                                <div class="col-12 col-md-4">
+                                  <div class="card" style="width: 100%;">
+                                    <img src="img/univ-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Project Management Course</h5>
+                                      <p class="card-text"></p>
+                                      <div class="row">
+                                        <div class="col-md-8">Institute<BR><b>IIM Raipur</b> </div>
+                                        <div class="col-md-4"><img src="img/iim-raipur.png" height=50 width=50 class="">
+                                        </div>
+                                      </div>
+                                      Duration: <br><b>5 Months</b>
+                                      <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                     </div>
-                                    Duration: <br><b>5 Months</b> <br><br>
-                                    <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
+                                  </div>
+                                 </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="col-12 col-md-4">
+                                  <div class="card" style="width: 100%;">
+                                    <img src="img/univ-3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Project Management Course</h5>
+                                      <p class="card-text"></p>
+                                      <div class="row">
+                                        <div class="col-md-8">Institute<BR><b>IMI</b></div>
+                                        <div class="col-md-4"><img src="img/imi.png" height=50 width=50 class=""></div>
+                                      </div>
+                                      Duration: <br><b>5 Months</b> <br><br>
+                                      <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                              <!--col-md-4-->
-                            </div><!-- row-->
-                          </div><!-- Carousal Item-->
-                        </div>
-                      </div>
-                      <!--End carousel-->
+
+                            </div>
+
+                          </div>
+                          <!-------------Carousel v1.2 ------------------>
+
                     </div>
-                    <div class="col-1 align-items-center justify-content-center">
-                      <a href="#carouselExampleIndicators" data-slide="next">
-                        <div class="carousel-nav-icon">
-                          <span style="border-radius:50%;display: inline-flex;align-items: center;"
-                            class="px-2 nav-btn nav-btn-white" aria-hidden="true"
-                            style="padding-top:14px; padding-bottom:2px;"><i
-                              class="fa fa-2x fa-angle-right mx-auto"></i></span>
-                        </div>
-                      </a>
-                      <a href="#carouselExampleIndicators" data-slide="prev">
-                        <div class="carousel-nav-icon">
-                          <span style="border-radius:50%;display: inline-flex;align-items: center;"
-                            class="px-2 nav-btn nav-btn-white" aria-hidden="true"
-                            style="padding-top:14px; padding-bottom:2px;"><i
-                              class="fa fa-2x fa-angle-left mx-auto"></i></span>
-                        </div>
-                      </a>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
               <!-- END Project Management-->
-              <a class="nav-link p-3" id="pills-profile-tab"><i class="fas fa-lg fa-caret-right mr-3"></i>
-                OPERATIONS & BLACK BELT SIX SIGMA</a>
-                
+              <div class="nav-link p-3" id="pills-profile-tab"><i class="fas fa-lg fa-caret-right mr-3"></i>
+                OPERATIONS & BLACK BELT SIX SIGMA</div>
               <div class="display-none" id="pills-profile">
+                <br>
                 <div class="container mb-2">
                   <div class="row d-flex align-items-center">
-                    <div class="col-10">
-                      <!--Start carousel-->
-                      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
+                    <div class="col-12">
+                      <div id="sixSigmaCarousel2" class="mx-auto carousel slide carousel-multi-item v-2 homepage-course-carousel" data-ride="carousel">
+                        <div class="carousel-inner v-2" role="listbox">
+
                           <div class="carousel-item active">
-                            <div class="card-deck">
+                            <div class="col-12 col-md-4">
                               <div class="card" style="width: 100%;">
                                 <img src="img/univ-1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title">Operations & Six Sigma Course</h5>
+                                  <h5 class="card-title">Black Belt Six SIgma</h5>
+                                  <p class="card-text"></p>
+                                  <div class="row">
+                                    <div class="col-md-8 col-sm-6">Institute<BR><b>IIM Raipur</b> </div>
+                                    <div class="col-md-4 col-sm-6"><img src="img/iim-raipur.png" height=50 width=50 class="">
+                                    </div>
+                                  </div>
+                                  Duration: <br><b>5 Months</b>
+                                  <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="col-12 col-md-4">
+                              <div class="card" style="width: 100%;">
+                                <img src="img/univ-2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Black Belt Six SIgma</h5>
+                                  <p class="card-text"></p>
+                                  <div class="row">
+                                    <div class="col-md-8">Institute<BR><b>IIM Rohtak</b></div>
+                                    <div class="col-md-4"><img src="img/iim-rohtak-logo.png" height=50 width=50
+                                        class=""></div>
+                                  </div>
+                                  Duration: <br><b>5 Months</b>
+                                  <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="col-12 col-md-4">
+                              <div class="card" style="width: 100%;">
+                                <img src="img/univ-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Black Belt Six SIgma</h5>
+                                  <p class="card-text"></p>
+                                  <div class="row">
+                                    <div class="col-md-8">Institute<BR><b>IMI</b></div>
+                                    <div class="col-md-4"><img src="img/imi.png" height=50 width=50 class=""></div>
+                                  </div>
+                                  Duration: <br><b>5 Months</b>
+                                  <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="col-12 col-md-4">
+                              <div class="card" style="width: 100%;">
+                                <img src="img/univ-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Black Belt Six SIgma</h5>
                                   <p class="card-text"></p>
                                   <div class="row">
                                     <div class="col-md-8">Institute<BR><b>IIM Raipur</b> </div>
                                     <div class="col-md-4"><img src="img/iim-raipur.png" height=50 width=50 class="">
                                     </div>
                                   </div>
+                                  Duration: <br><b>5 Months</b>
                                   <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                 </div>
                               </div>
-                              <div class="card" style="width: 100%;">
-                                <img src="img/univ-2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Operations & Six Sigma Course</h5>
-                                  <p class="card-text"></p>
-                                  <div class="row">
-                                    <div class="col-md-8">Institute:<BR><b>IIM Rohtak</b></div>
-                                    <div class="col-md-4"><img src="img/iim-rohtak-logo.png" height=50 width=50
-                                        class="">
-                                    </div>
-                                  </div>
-                                  <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
-                                </div>
-                              </div>
-                              <div class="card" style="width: 100%;">
-                                <img src="img/univ-3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Operations & Six Sigma Course</h5>
-                                  <p class="card-text"></p>
-                                  <div class="row">
-                                    <div class="col-md-8">Institute<BR><b>IMI</b></div>
-                                    <div class="col-md-4"><img src="img/imi.png" height=50 width=50 class=""></div>
-                                  </div>
-                                  <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
-                                </div>
-                              </div>
-                            </div><!-- card-deck-->
-                          </div><!-- Carousal Item-->
+                            </div>
+                          </div>
                         </div>
+
                       </div>
-                      <!--End carousel-->
                     </div>
-                    <div class="col-1 align-items-center justify-content-center">
-                      <a href="#carouselExampleIndicators" data-slide="next">
+                    <!--<div class="col-1 align-items-center justify-content-center">
+                      <a href="#sixSigmaCarousel2" data-slide="next">
                         <div class="carousel-nav-icon">
                           <span style="border-radius:50%;display: inline-flex;align-items: center;"
                             class="px-2 nav-btn nav-btn-white" aria-hidden="true"
@@ -865,7 +971,7 @@
                               class="fa fa-2x fa-angle-right mx-auto"></i></span>
                         </div>
                       </a>
-                      <a href="#carouselExampleIndicators" data-slide="prev">
+                      <a href="#sixSigmaCarousel2" data-slide="prev">
                         <div class="carousel-nav-icon">
                           <span style="border-radius:50%;display: inline-flex;align-items: center;"
                             class="px-2 nav-btn nav-btn-white" aria-hidden="true"
@@ -873,7 +979,7 @@
                               class="fa fa-2x fa-angle-left mx-auto"></i></span>
                         </div>
                       </a>
-                    </div>
+                    </div>-->
                   </div>
                 </div><!-- my-5 container-->
               </div>
@@ -883,17 +989,17 @@
               <div class=" display-none" id="pills-messages" >
                 <h1>MESSAGE</h1>
               </div>
-              <a class="nav-link p-3" id="pills-setting-tab" ><i class="fas fa-lg fa-caret-right mr-3"></i>
-                DATA
-                SCI/AI/ML/ANALYTICS</a>
+              <a class="nav-link p-3" id="pills-data-tab" ><i class="fas fa-lg fa-caret-right mr-3"></i>
+                DATA SCI/AI/ML/ANALYTICS</a>
+                <div class="display-none p-3" id="pills-data">
+                  <h1>Courses List</h1>
+                </div>
               <a class="nav-link p-3" id="pills-settings-tab" ><i class="fas fa-lg fa-caret-right mr-3"></i> HR
                 CERTIFICATIONS</a>
                 
-              <div class="display-none" id="pills-settings">
-                <h1>SETTINGS</h1>
+              <div class="display-none p-3" id="pills-settings">
+                <h1>HR CERTIFICATIONS</h1>
               </div>
-              <a class="nav-link p-3" id="pills-setting-tab"><i class="fas fa-lg fa-caret-right mr-3"></i>
-                PROJECT MANAGEMENT</a>
             </div>
           </div>
 
@@ -903,24 +1009,25 @@
       <div class="d-none d-sm-block">
         <div class="row text-dark" style="background-color: #f5fdff">
           <div class="col-md-3 col-xs-12 text-dark" id="programs-side-menu">
-            <div class="nav flex-column nav-pills p-3 ml-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link active p-3" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-project-management"
-                role="tab" aria-controls="v-pills-project-management" aria-selected="true"><i
-                  class="fas fa-lg mr-3 fa-caret-right"></i> Project Management </a>
-
+            <div class="nav flex-column nav-pills p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              
+                  <a class="nav-link active p-3" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-project-management" role="tab"
+                  aria-controls="v-pills-project-management" aria-selected="true"><i class="fas fa-lg fa-caret-right mr-3"></i>
+                  PROJECT MANAGEMENT</a>
 
               <a class="nav-link p-3" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
                 aria-controls="v-pills-operations" aria-selected="false"><i class="fas fa-lg fa-caret-right mr-3"></i>
                 OPERATIONS & BLACK BELT SIX SIGMA</a>
+
               <a class="nav-link p-3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
                 aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-lg fa-caret-right mr-3"></i>
                 SPORTS MANAGEMENT</a>
-              <a class="nav-link p-3" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-lg fa-caret-right mr-3"></i>
+              <a class="nav-link p-3" id="v-pills-data-tab" data-toggle="pill" href="#v-pills-data" role="tab"
+                aria-controls="v-pills-data" aria-selected="false"><i class="fas fa-lg fa-caret-right mr-3"></i>
                 DATA
                 SCI/AI/ML/ANALYTICS</a>
-              <a class="nav-link p-3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-lg fa-caret-right mr-3"></i> HR
+              <a class="nav-link p-3" id="v-pills-certification-tab" data-toggle="pill" href="#v-pills-certification" role="tab"
+                aria-controls="v-pills-certification" aria-selected="false"><i class="fas fa-lg fa-caret-right mr-3"></i> HR
                 CERTIFICATIONS</a>
               <a class="nav-link p-3" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
                 aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-lg fa-caret-right mr-3"></i>
@@ -935,13 +1042,12 @@
                 <div class="container mb-2">
                   <div class="row d-flex align-items-center">
                     <div class="col-10">
-                      <!--Start carousel-->
-                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <!--------------NEW Carousel----------->
+                        <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 homepage-course-carousel" data-ride="carousel">
+                          <div class="carousel-inner v-2" role="listbox">
 
-                        <div class="carousel-inner">
-                          <div class="carousel-item  active">
-                            <div class="row">
-                              <div class="col-md-4 col-xs-12">
+                            <div class="carousel-item active">
+                              <div class="col-12 col-md-4">
                                 <div class="card" style="width: 100%;">
                                   <img src="img/univ-1.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
@@ -957,8 +1063,9 @@
                                   </div>
                                 </div>
                               </div>
-                              <!--col-md-4-->
-                              <div class="col-md-4 col-xs-12">
+                            </div>
+                            <div class="carousel-item">
+                              <div class="col-12 col-md-4">
                                 <div class="card" style="width: 100%;">
                                   <img src="img/univ-2.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
@@ -974,8 +1081,9 @@
                                   </div>
                                 </div>
                               </div>
-                              <!--col-md-4-->
-                              <div class="col-md-4 col-xs-12">
+                            </div>
+                            <div class="carousel-item">
+                              <div class="col-12 col-md-4">
                                 <div class="card" style="width: 100%;">
                                   <img src="img/univ-3.jpg" class="card-img-top" alt="...">
                                   <div class="card-body">
@@ -990,15 +1098,32 @@
                                   </div>
                                 </div>
                               </div>
-                              <!--col-md-4-->
-                            </div><!-- row-->
-                          </div><!-- Carousal Item-->
+                            </div>
+                            <div class="carousel-item">
+                              <div class="col-12 col-md-4">
+                                <div class="card" style="width: 100%;">
+                                  <img src="img/univ-1.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Project Management Course</h5>
+                                    <p class="card-text"></p>
+                                    <div class="row">
+                                      <div class="col-md-8">Institute<BR><b>IIM Raipur</b> </div>
+                                      <div class="col-md-4"><img src="img/iim-raipur.png" height=50 width=50 class="">
+                                      </div>
+                                    </div>
+                                    Duration: <br><b>5 Months</b> <br><br>
+                                    <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
-                      </div>
-                      <!--End carousel-->
+                        <!-------------Carousel v1.2 ------------------>
                     </div>
                     <div class="col-1 align-items-center justify-content-center">
-                      <a href="#carouselExampleIndicators" data-slide="next">
+                      <a href="#carousel-example-multi" data-slide="next">
                         <div class="carousel-nav-icon">
                           <span style="border-radius:50%;display: inline-flex;align-items: center;"
                             class="px-2 nav-btn nav-btn-white" aria-hidden="true"
@@ -1006,7 +1131,7 @@
                               class="fa fa-2x fa-angle-right mx-auto"></i></span>
                         </div>
                       </a>
-                      <a href="#carouselExampleIndicators" data-slide="prev">
+                      <a href="#carousel-example-multi" data-slide="prev">
                         <div class="carousel-nav-icon">
                           <span style="border-radius:50%;display: inline-flex;align-items: center;"
                             class="px-2 nav-btn nav-btn-white" aria-hidden="true"
@@ -1023,66 +1148,95 @@
                 <div class="container mb-2">
                   <div class="row d-flex align-items-center">
                     <div class="col-10">
-                      <!--Start carousel-->
-                      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
+
+                      <div id="sixSigmaCarousel" class="carousel slide carousel-multi-item v-2 homepage-course-carousel" data-ride="carousel">
+                        <div class="carousel-inner v-2" role="listbox">
+
                           <div class="carousel-item active">
-                            <div class="card-deck">
+                            <div class="col-12 col-md-4">
                               <div class="card" style="width: 100%;">
                                 <img src="img/univ-1.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title">Operations & Six Sigma Course</h5>
+                                  <h5 class="card-title">Black Belt Six SIgma</h5>
                                   <p class="card-text"></p>
                                   <div class="row">
                                     <div class="col-md-8">Institute<BR><b>IIM Raipur</b> </div>
                                     <div class="col-md-4"><img src="img/iim-raipur.png" height=50 width=50 class="">
                                     </div>
                                   </div>
+                                  Duration: <br><b>5 Months</b> <br><br>
                                   <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="col-12 col-md-4">
                               <div class="card" style="width: 100%;">
                                 <img src="img/univ-2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title">Operations & Six Sigma Course</h5>
+                                  <h5 class="card-title">Black Belt Six SIgma</h5>
                                   <p class="card-text"></p>
                                   <div class="row">
-                                    <div class="col-md-8">Institute:<BR><b>IIM Rohtak</b></div>
+                                    <div class="col-md-8">Institute<BR><b>IIM Rohtak</b></div>
                                     <div class="col-md-4"><img src="img/iim-rohtak-logo.png" height=50 width=50
-                                        class="">
-                                    </div>
+                                        class=""></div>
                                   </div>
+                                  Duration: <br><b>5 Months</b> <br><br>
                                   <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="col-12 col-md-4">
                               <div class="card" style="width: 100%;">
                                 <img src="img/univ-3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title">Operations & Six Sigma Course</h5>
+                                  <h5 class="card-title">Black Belt Six SIgma</h5>
                                   <p class="card-text"></p>
                                   <div class="row">
                                     <div class="col-md-8">Institute<BR><b>IMI</b></div>
                                     <div class="col-md-4"><img src="img/imi.png" height=50 width=50 class=""></div>
                                   </div>
+                                  Duration: <br><b>5 Months</b> <br><br>
                                   <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
                                 </div>
                               </div>
-                            </div><!-- card-deck-->
-                          </div><!-- Carousal Item-->
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="col-12 col-md-4">
+                              <div class="card" style="width: 100%;">
+                                <img src="img/univ-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Black Belt Six SIgma</h5>
+                                  <p class="card-text"></p>
+                                  <div class="row">
+                                    <div class="col-md-8">Institute<BR><b>IIM Raipur</b> </div>
+                                    <div class="col-md-4"><img src="img/iim-raipur.png" height=50 width=50 class="">
+                                    </div>
+                                  </div>
+                                  Duration: <br><b>5 Months</b> <br><br>
+                                  <a href="#" class="float-right btn btn-dark btn-sm">Apply Now</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+
                       </div>
-                      <!--End carousel-->
+                      
                     </div>
                     <div class="col-1 align-items-center justify-content-center">
-                      <a href="#carouselExampleIndicators" data-slide="next">
+                      <a href="#sixSigmaCarousel" data-slide="next">
                         <div class="carousel-nav-icon">
-                          <span style="border-radius:50%;display: inline-flex;align-items: center;"
-                            class="px-2 nav-btn nav-btn-white" aria-hidden="true"
+                          <span style="border-radius:50%;display: inline-flex;align-items: center;"                     class="px-2 nav-btn nav-btn-white" aria-hidden="true"
                             style="padding-top:14px; padding-bottom:2px;"><i
                               class="fa fa-2x fa-angle-right mx-auto"></i></span>
                         </div>
                       </a>
-                      <a href="#carouselExampleIndicators" data-slide="prev">
+                      <a href="#sixSigmaCarousel" data-slide="prev">
                         <div class="carousel-nav-icon">
                           <span style="border-radius:50%;display: inline-flex;align-items: center;"
                             class="px-2 nav-btn nav-btn-white" aria-hidden="true"
@@ -1100,12 +1254,18 @@
               <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                 <h1>SETTINGS</h1>
               </div>
+              <div class="tab-pane fade" id="v-pills-certification" role="tabpanel" aria-labelledby="v-pills-certification-tab">
+                <h1>CERTIFICATION</h1>
+              </div>
+              <div class="tab-pane fade" id="v-pills-data" role="tabpanel" aria-labelledby="v-pills-data-tab">
+                <h1>DATA</h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div style="padding-bottom: 180px;">
+    <div style="padding-bottom: 70px;">
       <svg viewBox="0 0 1440 320">
         <path fill="#f5fdff" fill-opacity="1"
           d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,218.7C672,203,768,149,864,128C960,107,1056,117,1152,128C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
@@ -1117,7 +1277,7 @@
 
   <BR><BR>
   <!-------WHERE OUR ALUMNI WORKS--------->
-  <section id="alumni" class="mt-5" style="background-color: white;">
+  <section id="alumni" class="mt-5" style="margin-top:110px !important; background-color: white;">
     <h3 class="ml-5"><b>WHERE OUR ALUMNI WORKS</b></h3>
     <div class="row">
       <div class="col-md-5 col-xs-12 text-center">
@@ -1595,18 +1755,16 @@
                       class="btn btn-link text-decoration-none outline collapsed text-left faq-card-btn faq-card-btn1"
                       type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                       aria-controls="collapseOne">
-                      Q: How does this work?
+                      Q:	What is career life cycle? 
                       <i class="fas fa-angle-down arrow-1 float-right"></i>
                     </button>
                   </h2>
                   <div id="collapseOne" class="collapse bg-light faq-card-ans" aria-labelledby="headingOne"
                     data-parent="#faqExample">
                     <div class="card-body">
-                      <b>Answer:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas assumenda error
-                      iure
-                      ab repellat autem vitae iusto adipisci sapiente quae dolor magni, nesciunt optio consectetur esse
-                      modi
-                      corrupti maxime beatae!
+                      <b>Answer:</b> <p>
+                        Observing careers in stages aligns with a viewpoint that much of life happens in cycles. As a human take birth, grow and die, sun raises and sun set. Everything fall down in a cycle or sequence of activities. Hence, the career has its own life cycle. The important part is to understand what stage you are…
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1619,7 +1777,7 @@
                     <button class="btn btn-link text-decoration-none collapsed text-left faq-card-btn faq-card-btn2"
                       type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                       aria-controls="collapseTwo">
-                      Q: What is Question 2?
+                      Q: What are different career stages?
                       <i class="fas fa-angle-down arrow-2 float-right"></i>
                     </button>
                   </h2>
@@ -1627,11 +1785,7 @@
                   <div id="collapseTwo" class="collapse bg-light faq-card-ans" aria-labelledby="headingTwo"
                     data-parent="#faqExample">
                     <div class="card-body">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo saepe hic unde, cum
-                      perferendis
-                      iste similique maiores, voluptate culpa at qui, officia labore. Provident quod animi fugit magni
-                      esse
-                      quia.
+                      <b>Answer: </b>The entire career cycle has been divided into 5 main stages as Exploration, Establishment , Mid- Career , Late Career and Decline. 
                     </div>
                   </div>
                 </div>
@@ -1645,7 +1799,7 @@
                     <button class="btn btn-link text-decoration-none text-left collapsed faq-card-btn faq-card-btn3"
                       type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                       aria-controls="collapseThree">
-                      Q. What is another question?
+                      Q:	Which is the most crucial career stage
                       <i class="fas fa-angle-down arrow-3 float-right"></i>
                     </button>
                   </h2>
@@ -1653,11 +1807,7 @@
                   <div id="collapseThree" class="bg-light collapse faq-card-ans" aria-labelledby="headingThree"
                     data-parent="#faqExample">
                     <div class="card-body">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure maiores dolorem quis magni
-                      laboriosam!
-                      Quae, eos recusandae eum eveniet perspiciatis deserunt non fugit impedit, odit atque minus ratione
-                      rem
-                      facilis.
+                      <b>Answer</b>At no stage of your career things going to be easy or difficult its more of how well you have prepared for next. However, study says the most difficult stage among all are the Establishment and Mid-career.
                     </div>
                   </div>
                 </div>
@@ -1666,26 +1816,128 @@
             <div class="card faq-card">
 
               <div class="card-back4">
-                <div class="card-header px-2" id="headingThree">
+                <div class="card-header px-2" id="headingFour">
                   <h2 class="mb-0 question-heading">
                     <button class="btn btn-link text-decoration-none text-left collapsed faq-card-btn faq-card-btn4"
                       type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                      aria-controls="collapseThree">
-                      Q. What is the next question?
+                      aria-controls="collapseFour">
+                      Q:	What is the best way to make sure Mid-career stage is fruitful? 
                       <i class="fas fa-angle-down arrow-4 float-right"></i>
                     </button>
                   </h2>
 
-                  <div id="collapseFour" class="bg-light collapse faq-card-ans" aria-labelledby="headingThree"
+                  <div id="collapseFour" class="bg-light collapse faq-card-ans" aria-labelledby="headingFour"
                     data-parent="#faqExample">
                     <div class="card-body">
-                      The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                      <b>Answer: </b>
+                      Lets first understand why mid stage is crucial as this is the stage an individual is not new to the industry neither to old hence whatever we have learned becomes outdated and industry start seeing you as outdated product, is the reason Mid-career stage is the most difficult and demanding stage.  Its more of a situation customer goes to a shop and make sure buys a updated product and ignore the out dated one. 
                     </div>
                   </div>
                 </div>
               </div>
 
             </div>
+            <div class="card faq-card">
+
+              <div class="card-back5">
+                <div class="card-header px-2" id="headingFive">
+                  <h2 class="mb-0 question-heading">
+                    <button class="btn btn-link text-decoration-none text-left collapsed faq-card-btn faq-card-btn5"
+                      type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                      aria-controls="collapseFive">
+                      Q:	Why I need to keep developing myself? 
+                      <i class="fas fa-angle-down arrow-5 float-right"></i>
+                    </button>
+                  </h2>
+
+                  <div id="collapseFive" class="bg-light collapse faq-card-ans" aria-labelledby="headingFive"
+                    data-parent="#faqExample">
+                    <div class="card-body">
+                      <b>Answer: </b>
+                      Why do you check a product expiry date before you buy it. Hence, employer that what employers follow and pick up fresh or updated human resources therefore developing and upskilling is must if you desire to have continued growth in your professional career. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card faq-card">
+
+              <div class="card-back6">
+                <div class="card-header px-2" id="headingSix">
+                  <h2 class="mb-0 question-heading">
+                    <button class="btn btn-link text-decoration-none text-left collapsed faq-card-btn faq-card-btn6"
+                      type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                      aria-controls="collapseSix">
+                      Q:	What if I do not want to invest in self-development? 
+                      <i class="fas fa-angle-down arrow-6 float-right"></i>
+                    </button>
+                  </h2>
+
+                  <div id="collapseSix" class="bg-light collapse faq-card-ans" aria-labelledby="headingSix"
+                    data-parent="#faqExample">
+                    <div class="card-body">
+                      <b>Answer: </b>
+                      No one buys an old dated product hence you may be picked up by chance but not by few choice. Become a product employer wish to buy no matter but costly you are.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card faq-card">
+
+              <div class="card-back7">
+                <div class="card-header px-2" id="headingSeven">
+                  <h2 class="mb-0 question-heading">
+                    <button class="btn btn-link text-decoration-none text-left collapsed faq-card-btn faq-card-btn7"
+                      type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                      aria-controls="collapseSeven">
+                      Q:	What is the expected ROI from continues development? 
+                      <i class="fas fa-angle-down arrow-7 float-right"></i>
+                    </button>
+                  </h2>
+
+                  <div id="collapseSeven" class="bg-light collapse faq-card-ans" aria-labelledby="headingSeven"
+                    data-parent="#faqExample">
+                    <div class="card-body">
+                      <b>Answer: </b>
+                      A updated product never been evaluated on what it may cost but what it worth for hence continues developments have high end returns. It’s basically called small investments with big benefits.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card faq-card">
+
+              <div class="card-back8">
+                <div class="card-header px-2" id="headingEight">
+                  <h2 class="mb-0 question-heading">
+                    <button class="btn btn-link text-decoration-none text-left collapsed faq-card-btn faq-card-btn8"
+                      type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                      aria-controls="collapseEight">
+                      Q:	Where I can find the right Development plan for me? 
+                      <i class="fas fa-angle-down arrow-8 float-right"></i>
+                    </button>
+                  </h2>
+
+                  <div id="collapseEight" class="bg-light collapse faq-card-ans" aria-labelledby="headingEight"
+                    data-parent="#faqExample">
+                    <div class="card-body">
+                      <b>Answer: </b>
+                      You need to understand what career stage are you in, what are the gaps becoming hurdles to achieve the goals you have and the most important part self-realization hence connect to one of the expert strategic counsellor and let them help you find the best for you. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
           </div>
 
         </div>
@@ -1769,18 +2021,15 @@
   </footer>
 
 
-  <!-- Bootstrap JS-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-  <!--custom JS-->
-  <script src="js/script.js"></script>
-  <script src="js/demo.js"></script>
+<!-- Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--custom JS-->
+    <script src="js/script.js"></script>
+    <script src="js/demo.js"></script>
 </body>
+
+
+<!-- Mirrored from uptoptest.herokuapp.com/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 13 Aug 2020 18:55:10 GMT -->
 </html>
