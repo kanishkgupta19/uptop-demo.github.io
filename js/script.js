@@ -411,3 +411,43 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").children().addClass("menu-selected");
    }                   
 });
+
+
+//-----------FORM--------------------
+$("#applynow-submit").click(function(){
+  var c = document.getElementById('banner');
+  var coursename = c.getElementsByTagName('h2')[0].innerText;
+  alert(coursename);
+  var name = document.getElementById('applynow-firsname').value+" " + document.getElementById('applynow-lastname').value;
+  var contact = document.getElementById('applynow-contact').value;
+  var email = document.getElementById('applynow-email').value;
+  var city = document.getElementById('applynow-city').value;
+  var designation = document.getElementById('applynow-designation').value;
+
+  $.post("formsubmit.php", {NAME:name, CONTACT:contact, EMAIL:email, CITY: city, DESIGNATION:designation, COURSE:coursename}, function(data, res){
+    if(data.includes('Success'))
+    {
+      alert("Form Submitted Successfully");
+    }
+    else{
+      alert("Some Error Occurred");
+      console.log(data);
+    }
+  });
+
+  /*$.ajax("/formsubmit.php",{
+    type:'POST',
+    dataType: 'json',
+    data: {NAME:name, CONTACT:contact, EMAIL:email, CITY: city, DESIGNATION:designation, COURSE:coursename},
+    contentType: "application/json; charset=utf-8",
+    crossDomain : true,
+    success:function(data, status, xhr){
+      alert(data);
+    },
+    error:function(jqXhr, textStatus, errorMessage){
+      console.log(errorMessage, textStatus, jqXhr);
+
+    }
+  });*/
+
+});
