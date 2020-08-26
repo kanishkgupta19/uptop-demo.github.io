@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uptop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+  <!--Fonts-->
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=TheNextFont">
+</head>
+<body>
+  <!-- Nav bar -->
+  <header style="margin-bottom:-10px;">
+    <nav id="nav-bar" class="pt-3 navbar navbar-expand-lg navbar-light"
+      style="background-color: white;">
+      <a class="navbar-brand" href="index.html">
+        <img id="uptop-logo" src="img/logo-trimmed.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!--<li class="nav-item mx-2">
+            <a class="nav-link" style="color: #25d37c;" href="index.html"></a>
+          </li>-->
+          <li class="nav-item  mx-3 navbarDropdown">
+            <a class="nav-link " href="#" data-hover="dropdown" data-animations="fadeIn fadeInLeft fadeInUp fadeInRight">
+              Programs <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-programs display-none">
+              <div class="d-block d-sm-none ">
+                <div class="row mx-auto" style="max-width: 95%;">
+                  <div class="col-md-3 col-xs-12">
+                    <div id="mba-menu1" class="dropdown-item">
+                      Human Resources<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="mba1" class="row display-none">
+                      <a href="executive-PG-certification.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 80px;" src="img/mdi.png">
+                          </div>
+                            <p class="mt-2"><b>Executive Post Graduate Business Partner HR</b></p>
+                            <p class="dropdown-years"><i>5 Months</i></p>
+                            <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                      <a href="aphri-1.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 50px;" src="img/hrciLogo.png">
+                          </div>
+                            <p class="mt-2"><b>APHRI</b></p>
+                          <p class="dropdown-years"><i>2 Months</i></p>
+                          <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                      <a href="phri.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 50px;" src="img/hrciLogo.png">
+                          </div>
+                            <p class="mt-2"><b>PHRI</b></p>
+                          <p class="dropdown-years"><i>2 Months</i></p>
+                          <p class="admission-status-close">Admission Closed</p>
+                        </div>
+                      </a>
+                      <a href="sphri.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 50px;" src="img/hrciLogo.png">
+                          </div>
+                            <p class="mt-2"><b>SPHRI</b></p>
+                          <p class="dropdown-years"><i>2 Months</i></p>
+                          <p class="admission-status-close">Admission Close</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="datascience-menu1" class="dropdown-item">
+                      Data Science<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="datascience1" class="row display-none">
+                      <a href="data-science-ml.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-raipur.png">
+                          </div>
+                            <p class="mt-3"><b>Data Science and Machine learning in R and Python</b></p>
+                          <p class="dropdown-years"><i>5 Months</i></p>
+                          <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="machinelearning-menu1" class="dropdown-item">
+                      Sales Marketinig & Branding<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="machinelearning1" class="row display-none">
+                      <a href="product-brand-management.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 80px;" src="img/mdi.png">
+                          </div>
+                          <p class="mt-2">Executive product and Brand Management</p>
+                          <p class="dropdown-years"><i>4 Months</i></p>
+                          <p class="admission-status-close">Admission Closed</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="software-menu1" class="dropdown-item" >
+                      Operation Management<i class="fa fa-angle-down float-right"></i>
+                    </div>
+
+                    <div id="software1" class="row display-none">
+                      <a href="executive-operations-management-with-six-sigma.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-raipur.png">
+                          </div>
+                            <p class="mt-3"><b>Operation Management with Six Sigma</b></p>
+                            <p class="dropdown-years"><i>5 Months</i></p>
+                            <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                      <a href="executive-operations-management-with-six-sigma-black-belt.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 80px;" src="img/mdi.png">
+                          </div>
+                          <p class="mt-2"><b>Executive Operation Management with Black Belt Six Sigma</b></p>
+                          <p class="dropdown-years"><i>5 Months</i></p>
+                          <p class="admission-status-close">Admission Close</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="law-menu1" class="dropdown-item" >
+                      Project Management<i class="fa fa-angle-down float-right"></i>
+                    </div>
+
+                    <div id="law1" class="row display-none">
+                      <a href="Project-management-program.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/mdi.png">
+                          </div>
+                            <p class="mt-2"><b>Executive Project Management</b></p>
+                            <p class="dropdown-years"><i>5 Months</i></p>
+                            <p class="admission-status-open">Admission Close</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div id="blockchain-menu1" class="dropdown-item">
+                      Finance<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="blockchain1" class="row display-none">
+                      <a href="risk-management-and-corporate-finance.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-raipur.png">
+                          </div>
+                          <p class="mt-3"><b>Corporate Finance and Risk Management</b></p>
+                          <p class="dropdown-years"><i>4 Months</i></p>
+                          <p class="admission-status-close">Admission Closed</p>
+                        </div>
+                      </a>
+                    </div>
+                    
+                    <div id="management-menu1" class="dropdown-item dropdown-item-last">
+                      Entrepreneurship<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="management1" class="row display-none">
+                      <a href="executive-entrepreneurship-program.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                          </div>
+                          <p class="mt-2"><b>Executive Entrepreneurship Program</b></p>
+                          <p class="dropdown-years"><i>4 Months</i></p>
+                          <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div id="executive-menu1" class="dropdown-item dropdown-item-last">
+                      Executive PG<i class="fa fa-angle-down float-right"></i>
+                    </div>
+                    <div id="executive1" class="row display-none">
+                      <a href="iimrohtak-executive-postgraduation-program.html">
+                        <div class="dropdown-object">
+                          <div class="text-center">
+                            <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                          </div>
+                          <p class="mt-2"><b>Executive PG Diploma Program in Management</b></p>
+                          <p class="dropdown-years"><i>1 Year</i></p>
+                          <p class="admission-status-open">Admission Open</p>
+                        </div>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-3 text-align-right">
+            <a class="nav-link" href="#" style="font-size:17px; margin-top:-2px"><i class="fab fa-whatsapp"></i></a>
+          </li>
+          <li class="nav-item mx-3 text-align-right">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="contactus.html" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="aboutus.html" tabindex="-1" aria-disabled="true">About</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#" tabindex="-1"
+              aria-disabled="true">Refer & Earn ₹</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#" tabindex="-1"
+              aria-disabled="true">Student Portal</a>
+          </li>
+        </ul>
+        <!--<button class="btn bg-dark text-white my-2 my-sm-0 " type="submit">Student Portal</button>-->
+      </div>
+    </nav>
+  </header>
+
+  <section class="mt-4 display-none dropdown-programs navbarDropdown2">
+    <div class="d-none d-sm-block">
+      <div class="row mx-auto" style="max-width: 95%;">
+        <div class="col-md-3 col-xs-12">
+          <div id="mba-menu" class="hover-dropdow-item dropdown-item dropdown-item-active">
+            Human Resources<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="datascience-menu" class="hover-dropdow-item dropdown-item">
+            Data Science<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="machinelearning-menu" class="hover-dropdow-item dropdown-item">
+            Sales Marketing & Branding<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="software-menu" class="hover-dropdow-item dropdown-item">
+            Operation Management<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="law-menu" class="hover-dropdow-item dropdown-item">
+            Project Management<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="blockchain-menu" class="hover-dropdow-item dropdown-item">
+            Finance<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="management-menu" class="hover-dropdow-item dropdown-item dropdown-item">
+            Entrepreneurship<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="executive-menu" class="hover-dropdow-item dropdown-item dropdown-item-last">
+            Executive PG 1 Year<i class="fa fa-angle-right float-right"></i>
+          </div>
+          <div id="executive2-menu" class="hover-dropdow-item dropdown-item dropdown-item-last">
+            Executive PG 2 Years<i class="fa fa-angle-right float-right"></i>
+          </div>
+        </div>
+        <div class="col-md-9 col-xs-12">
+          <div id="mba" class="row">
+            <a href="executive-PG-certification.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 80px;" src="img/mdi.png">
+                </div>
+                  <p class="mt-2"><b>Executive Post Graduate Business Partner HR</b></p>
+                  <p class="dropdown-years"><i>5 Months</i></p>
+                  <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+            <a href="aphri-1.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 50px;" src="img/hrciLogo.png">
+                </div>
+                  <p class="mt-2"><b>APHRI</b></p>
+                <p class="dropdown-years"><i>2 Months</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+            <a href="phri.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 50px;" src="img/hrciLogo.png">
+                </div>
+                  <p class="mt-2"><b>PHRI</b></p>
+                <p class="dropdown-years"><i>2 Months</i></p>
+                <p class="admission-status-close">Admission Closed</p>
+              </div>
+            </a>
+            <a href="sphri.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 50px;" src="img/hrciLogo.png">
+                </div>
+                  <p class="mt-2"><b>SPHRI</b></p>
+                <p class="dropdown-years"><i>2 Months</i></p>
+                <p class="admission-status-close">Admission Close</p>
+              </div>
+            </a>
+          </div>
+          <div id="datascience" class="row display-none">
+            <a href="data-science-ml.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-raipur.png">
+                </div>
+                  <p class="mt-3"><b>Data Science and Machine learning in R and Python</b></p>
+                <p class="dropdown-years"><i>5 Months</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+          </div>
+
+          <div id="machinelearning" class="row display-none">
+            <a href="product-brand-management.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 80px;" src="img/mdi.png">
+                </div>
+                <p class="mt-2">Executive product and Brand Management</p>
+                <p class="dropdown-years"><i>4 Months</i></p>
+                <p class="admission-status-close">Admission Closed</p>
+              </div>
+            </a>
+          </div>
+          <div id="software" class="row display-none">
+            <a href="executive-operations-management-with-six-sigma.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-raipur.png">
+                </div>
+                  <p class="mt-3"><b>Operation Management with Six Sigma</b></p>
+                  <p class="dropdown-years"><i>5 Months</i></p>
+                  <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+            <a href="executive-operations-management-with-six-sigma-black-belt.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 80px;" src="img/mdi.png">
+                </div>
+                <p class="mt-2"><b>Executive Operation Management with Black Belt Six Sigma</b></p>
+                <p class="dropdown-years"><i>5 Months</i></p>
+                <p class="admission-status-close">Admission Close</p>
+              </div>
+            </a>
+          </div>
+          <div id="law" class="row display-none">
+            <a href="Project-management-program.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/mdi.png">
+                </div>
+                  <p class="mt-2"><b>Executive Project Management</b></p>
+                  <p class="dropdown-years"><i>5 Months</i></p>
+                  <p class="admission-status-open">Admission Close</p>
+              </div>
+            </a>
+          </div>
+          </a>
+          <div id="blockchain" class="row display-none">
+            <a href="risk-management-and-corporate-finance.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-raipur.png">
+                </div>
+                <p class="mt-3"><b>Corporate Finance and Risk Management</b></p>
+                <p class="dropdown-years"><i>4 Months</i></p>
+                <p class="admission-status-close">Admission Closed</p>
+              </div>
+            </a>
+          </div>
+          </a>
+          <div id="management" class="row display-none">
+            <a href="executive-entrepreneurship-program.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                </div>
+                <p class="mt-2"><b>Executive Entrepreneurship Program</b></p>
+                <p class="dropdown-years"><i>4 Months</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+          </div>
+          <div id="executive" class="row display-none">
+            <a href="iimrohtak-executive-postgraduation-program.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                </div>
+                <p class="mt-2"><b>Executive PG Diploma Program in Management</b></p>
+                <p class="dropdown-years"><i>1 Year</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+          </div>
+          <div id="executive2" class="row display-none">
+            <a href="epgdsm.html">
+              <div class="dropdown-object">
+                <div class="text-center">
+                  <img style="width: 70px;" src="img/iim-rohtak-logo.png">
+                </div>
+                <p class="mt-2"><b>Executive PG Diploma Program in Sports Management</b></p>
+                <p class="dropdown-years"><i>2 Years</i></p>
+                <p class="admission-status-open">Admission Open</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Nav Ends Here-->
+
+<br>
+<center>
+<p style="font-family:sweetsanspromedium; color:#355c9f; font-size: 18px;">Blog</p>
+<h3 style="font-family: monsterbold; color:#585858;">Top 5 Ways To Deal With Work Stress</h3>
+<br>
+<p style="font-family: monsterbold;">By J.K. Rowling</p>
+<p style="font-family: robotomedium; color:#606060; font-size:15px; margin-top:-8px;">Nov 17, 2019</p>
+</center>
+<br>
+<div class="container-bigg"><img src="img/blog-image.png" style="width: 100%;"></div>
+<br>
+<div class="container-bigg p-5" style="font-family: robotoregular; color:#606060; font-size:16px;">
+    <p>
+        <span style="font-size: 40px;">S</span>tress represents 40% of all business-related illnesses and has stayed a significant issue in the UK, US, India, and other countries for a considerable length of time. Prominent cases have featured that even those at the top aren’t safe from the weights of regular working life and we’re progressively perceiving the requirement for a superior proficiency around mental medical problems.
+    </p><p>
+    Dynamic associations are adopting to proactive approaches and constructing representativeflexibility to evade pressure and weariness, in light of the understanding that emotional wellness is as significant as physical wellbeing for prosperity.
+    Wondering how you can deal with the work pressure and stress? Here are some ways to stay UpTop and strategies to cope with stress with positive factors and boost your career.
+    </p>
+    <p>
+    Associations are adopting to proactive approaches and constructing representativeflexibility to evade pressure and weariness, in light of the understanding that emotional wellness is as significant as physical wellbeing for prosperity.
+    Wondering how you can deal with the work pressure and stress? Here are some ways to stay UpTop and strategies to cope with stress with positive factors and boost your career.
+        </p>
+    <p style="color:black;font-family: monsterbold;">1. Take time for a proper break and look after your well being</p>
+    <p style="color: #2c2c2c;">Eating great and doing regular exercises is fundamental for guaranteeing great degrees of mental prosperity. Not only does physical movement discharge endorphins, which improve our mindset, it also calms overabundance energy that is developed through pressure.<br>
+        Regular breaks from work-life are also necessary. Even though it may just be you sitting at home doing nothing, but trust us, once in a while, taking a break will not only help you rejuvenate but also stir greater ideas in your mind.</p>
+
+    <p style="color:black;font-family: monsterbold;">2. Talk it out</p>
+    <p style="color: #2c2c2c;">Having face-to-face discussions can solve problems at a better pace as it leaves merely any space for misunderstandings. It is also very helpful in establishing a better rapport with colleagues. In especially unpleasant circumstances, containing our feelings can really harm our well being, so setting aside some effort to have appropriate conversations with everyone around you will have a genuine effect on your prosperity and execution at work.</p>
+    
+    <p style="color:black;font-family: monsterbold;">3. Networking is the key</p>
+    <p style="color: #2c2c2c;">Building associations with colleagues will provide a support group in scenes of stress and tension when the weight is generally serious. Working with those you trust and can depend on likewise lifts work fulfillment and inspiration levels. These are key segments of work environment flexibility and will battle the ascent of stress and nervousness, making it a lot simpler to connect for help if the weight turns out to be excessively. Orchestrating dinners and noon social exercises together is a simple and direct approach to bond more with everyone around you.</p>
+
+    <p style="color:black;font-family: monsterbold;">4. Balance your priorities</p>
+    <p style="color: #2c2c2c;">The rise of technology and especially portable mediums implies that it is harder to turn off toward the end of the working day and prioritize our needs. The impulse to browse messages after work or during weekends implies that we’re bound to stress as we think that it’s hard to separate ourselves from a working atmosphere. Set a cap on your working hours, switch off your messages and emails, and put aside time to unwind. Take standard breaks to clear your head during the day as well; taking a speedy stroll toward the evening can help calm apprehensive pressure and help you to settle on increasingly adjusted choices. Numerous associations currently offer worker help programs, which offer guidance and direction on the most proficient method to guarantee a solid work-life balance.</p>
+    <br>
+    <center><img src="img/blog-img-2.png" class="lg-container"></center><br>
+    <p style="color:black;font-family: monsterbold;">5. Learn to say NO</p>
+    <p>Demonstrating that you’re ready to handle immense work pressure and challenges may be impressive for the bosses but saying yes to each task and taking on more work than you can sensibly deal with is hindering both to your own prosperity and execution. Analyze your own abilities to ensure you don’t have a burnout.</p>
+    <br><br>
+    <hr>
+
+    <div class="row mx-auto">
+        <div class="col-md-6">
+            <div style="display: flex;"><img src="img/testi-1.png" style="height:75px; width:75px;">
+                <p style="margin-top:10px; margin-left: 28px;"><span style="font-family: monsterbold; color: black; font-size:16px;">J.K. Rowling</span><br><span style="font-size:12px; font-family:monsterregular;">Content Writer</span></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div style="margin-top:20px;margin-left: 75px;"><span style="font-family:monsterregular; font-weight:light; font-size:12px; color:10px;">Follow me on:</span>  <span><i class="fab fa-twitter px-1"></i></span>  <span><i class="fab fa-linkedin px-1"></i></span></div> 
+        </div>
+    </div>
+
+
+</div>
+<br>
+<!-- related blogs-->
+<div class="container p-4">
+    <h2 style="font-family:monsterbold; color:#585858;">Related Blog Posts</h2>
+    <br><br>
+    <div class="row">
+        <div class="col-md-4" style="font-family: monstermedium;">
+            <img src="img/blog-pic-1.png" style="border-radius:25px;height:230px; width:320px; object-fit:cover;">
+            <br><br>
+            <div style="padding-left:20px; ">
+                <p style="color:#3961bf; font-size:14px;">Blog Post</p>
+                <p style="font-size:17px;">Top 5 ways to deal with work stress</p>
+                <p style="font-family:futura-medium; color:black;"><u>Read Story</u></p>
+            </div>
+        </div>
+        <div class="col-md-4" style=" font-family: monstermedium;">
+            <img src="img/blog-pic-2.png" style="border-radius:25px;height:230px; width:320px; object-fit:cover;">
+            <br><br>
+            <div style="padding-left:20px; ">
+                <p style="color:#3961bf; font-size:14px;">Blog Post</p>
+                <p style="font-size:17px;">Top 5 ways to deal with work stress</p>
+                <p style="font-family:futura-medium; color:black;"><u>Read Story</u></p>
+            </div>
+        </div>
+        <div class="col-md-4" style=" font-family: monstermedium;">
+            <img src="img/blog-pic-3.png" style="border-radius:25px;height:230px; width:320px; object-fit:cover;">
+            <br><br>
+            <div style="padding-left:20px; ">
+                <p style="color:#3961bf; font-size:14px;">Blog Post</p>
+                <p style="font-size:17px;">5 ways to make your day at work productive!</p>
+                <p style="font-family:futura-medium; color:black;"><u>Read Story</u></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="mt-5" style="background-color:#585858;">
+    <div class="text-white p-5">
+      <div class="row">
+        <div class="col-md-2" style="align-self: center; text-align: center;">
+
+          <a class="navbar-brand" href="#"><img style="height:40px; width:100px" src="logo-white.png"></a>
+          <!-- <center><b>upTop</b><br>Adapt By Learning</center> -->
+        </div>
+        <div class="col-md-4 second-side-line">
+          <b>DATA SCIENCE</b>
+          <ul class="footer-list">
+            <li>Data Science | PG Diploma</li>
+            <li>Machine Learning & AI | PG Diploma</li>
+            <li>Business Analytics | MBA (Executive)</li>
+            <li>Business Analytics | Certification</li>
+          </ul><br>
+          <b>TECHNOLOGY</b>
+          <ul class="footer-list">
+            <li>Software Development - FullStack | PG Diploma</li>
+            <li>Blockchain Technology | PG Certification</li>
+            <li>Blockchain Technology Management | Executive Program</li>
+            <li>Product Management | Certification</li>
+          </ul><br>
+          <b>LAW</b>
+          <ul class="footer-list">
+            <li>LLM in Corporate and Financial Law | LL.M Degree</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <b>EXECUTIVE PROGRAMS</b>
+          <ul class="footer-list">
+            <li>HR Analytics & Design Making</li>
+            <li>Leadership & Change Management</li>
+            <li>Digital Marketing</li>
+            <li>Cyber Security & Analytics</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <b>upTop</b>
+          <ul class="footer-list" style="padding-bottom: 50px;">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>Community</li>
+          </ul>
+
+          <div class="footer-input-container">
+            <input type="text" placeholder="info@upto.in">
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <center class="mx-auto">
+        <div style="display:content;" class="mx-auto">
+          <i class="mx-2 fab fa-lg fa-facebook-square"></i>
+          <i class="mx-2 fab fa-lg fa-instagram"></i>
+          <i class="mx-2 fab fa-lg fa-twitter"></i>
+          <i class="mx-2 fab fa-lg fa-linkedin"></i>
+          <i class="mx-2 fab fa-lg fa-youtube"></i>
+        </div>
+        <br>
+        <small class="mx-3">Twerms & Condition</small>
+        <small class="mx-3">Privacy Policy</small>
+        <small class="mx-3">Refund Policy</small>
+        <small class="mx-3">Contact Us</small>
+        <br><br>
+        <small>All Rights Reserved. Copyright © 2020 UpTop.in</small>
+      </center>
+    </div>
+  </footer>
+
+
+<!-- Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--custom JS-->
+    <script src="js/script.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>

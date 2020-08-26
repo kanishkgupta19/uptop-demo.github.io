@@ -1,0 +1,98 @@
+@font-face {
+  font-family: futura;
+  src: url('../fonts/FuturaHeavyfont.ttf');
+}
+
+@font-face {
+  font-family: futura-medium;
+  src: url('../fonts/futuramediumbt.ttf');
+}
+
+@font-face {
+  font-family: thenextfont;
+  src: url('../fonts/TheNextFont.ttf');
+}
+
+@font-face {
+  font-family: visueltpro;
+  src: url('../fonts/VisueltPro-Medium.ttf');
+}
+
+@font-face {
+  font-family: visueltproregular;
+  src: url('../fonts/VisueltPro-Regular.ttf');
+}
+@font-face {
+  font-family: visueltprolight;
+  src: url('../fonts/VisueltPro-Light.ttf');
+}
+
+@font-face {
+  font-family: visueltproitalic;
+  src: url('../fonts/VisueltPro-Italic.ttf');
+}
+
+@font-face {
+  font-family: robotolightItalic;
+  src: url('../fonts/Roboto-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: robotoregular;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: robotolight;
+  src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: sweetsanspromedium;
+  src: url('../fonts/SweetSansProMedium.otf');
+}
+
+@font-face {
+  font-family: sweetsansprolight;
+  src: url('../fonts/SweetSansProLight.otf');
+}
+
+@font-face {
+  font-family: monsterbold;
+  src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: monsterregular;
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: monstermedium;
+  src: url('../fonts/Montserrat-Medium.otf');
+}
+
+@font-face {
+  font-family: monsterlight;
+  src: url('../fonts/Montserrat-Light.otf');
+}
+
+@font-face {
+  font-family: opensansitalic;
+  src: url('../fonts/OpenSans-Italic.ttf');
+}
+
+@font-face {
+  font-family: naturebeauty;
+  src: url('../fonts/Nature-Beauty-Personal-Use.ttf');
+}
+
+@font-face {
+  font-family: snellroundhandblack;
+  src: url('../fonts/SnellRoundhandLTStd-BlkScr.otf');
+}
+
+@font-face {
+  font-family: helios;
+  src: url('../fonts/FontsFree-Net-helios4.ttf');
+}
