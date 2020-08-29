@@ -451,3 +451,116 @@ $("#applynow-submit").click(function(){
   });*/
 
 });
+
+var section = document.getElementById('fees');
+var principle = section.getElementsByTagName('p')[0].innerText;
+principle = Number(principle.replace(",", "").replace("₹", "").replace(",", "").replace(" ", "").replace("*",""));
+var interest = Math.round(Number(principle/10));
+
+
+var ctx = document.getElementById('myChart');
+var ctx = document.getElementById('myChart').getContext('2d');
+var ctx_loan = document.getElementById('myChart-loan');
+var ctx_loan = document.getElementById('myChart-loan').getContext('2d');
+var ctx = $('#myChart');
+var ctx_loan = $('#myChart-loan');
+var ctx = 'myChart';
+var LOAN_DATA = [interest, principle];
+var LOAN_LABELS = ['Interest', 'Principle Amt'];
+var DATA = [principle];
+var LABELS = ['EMI-1'];
+
+data = {
+    datasets: [{
+                  data: DATA,
+
+                  // These labels appear in the legend and in the tooltips when hovering different arcs
+                  backgroundColor: [
+                              'rgba(255, 99, 132)',
+                              'rgba(54, 162, 235)',
+                              'rgba(255, 206, 86)',
+                              'rgba(115, 196, 54)'
+                          ],
+                }],
+    labels: LABELS,
+    options: {
+        legend: {
+            display: false,
+            labels: {
+                fontColor: '#fff',
+                boxWidth:10,
+            }
+        }
+    }
+};
+
+loan_data = {
+    datasets: [{
+                  data: LOAN_DATA,
+
+                  // These labels appear in the legend and in the tooltips when hovering different arcs
+                  backgroundColor: [
+                              'rgba(255, 139, 132)',
+                              'rgba(54, 112, 235)',
+                              'rgba(155, 206, 86)',
+                              'rgba(195, 196, 54)',
+                              'rgba(95, 236, 154)'
+                          ],
+                }],
+    labels: LOAN_LABELS,
+    options: {
+        legend: {
+            display: false,
+            labels: {
+                fontColor: '#ffffff',
+                boxWidth:10,
+            }
+        }
+    }
+};
+var myPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: data
+});
+
+var myPieChart2 = new Chart(ctx_loan, {
+    type: 'pie',
+    data: loan_data
+});
+
+function changeData(num){
+  var emis = Number(principle/num);
+  emis = Math.round(emis);
+  //DATA=[];
+  //LABELS=[];
+  myPieChart.data.datasets.forEach((dataset) => {
+        dataset.data.pop();
+    });
+  for(var i=0; i<num; i++)
+  {
+    DATA[i]=emis;
+    let nn = i+1;
+    LABELS[i]="EMI-"+nn.toString();
+  }
+  myPieChart.data.labels=LABELS;
+  myPieChart.update();
+}
+
+
+function changeDataLoan(num){
+  var emis = Number(principle/num);
+  emis = Math.round(emis);
+  //DATA=[];
+  //LABELS=[];
+  myPieChart2.data.datasets.forEach((dataset) => {
+        dataset.data.pop();
+    });
+  for(var i=1; i<=num; i++)
+  {
+    LOAN_DATA[i]=emis;
+    let nn = i+1;
+    LOAN_LABELS[i]="L-"+nn.toString();
+  }
+  myPieChart2.data.labels=LOAN_LABELS;
+  myPieChart2.update();
+}

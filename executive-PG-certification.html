@@ -1974,10 +1974,7 @@
     <section id="fees">
       <div class="container">
         <br><br>
-        <div class="row p-4">
-          <div class="col-md-6">
-            <br><br>
-            <h3 style="font-family: thenextfont; font-size:21px; line-height:22px;">PROGRAM FEES</h3>
+            <h3 style="font-family: thenextfont; font-size:25px; line-height:20px;">PROGRAM FEES</h3>
             <br>
             <div style="display:flex">
               <p style="font-size: 26px; font-family: 'Montserrat', sans-serif;">₹ 60,000*</p>
@@ -1985,41 +1982,73 @@
                 style="margin-left: 50%;float:right; height:32px; width:92px;background-color:#585858; border-radius:6px; color:white;">View
                 Plans</button>
             </div>
-            <p style="font-size: 12px; font-family: 'Montserrat', sans-serif;">No Cost EMI at ₹29,167/month (Inclusive
-              of
-              all taxes)* (Applicable to people residing in India)</p>
+            <p style="font-size: 12px; font-family: 'Montserrat', sans-serif;">No Cost EMI at ₹15,000/month (Inclusive
+              of all taxes)* <br>(Applicable to people residing in India)</p>
+        <br><br>
+        <div class="row p-1">
+          <div class="col-md-6">
+            <div class="card m-2" style="border-radius: 5px;">
+              <div class="row">
+                <div class="col-md-6 text-white"
+                  style="padding:2.2rem;font-family:sweetsanspromedium; font-size:12px;background-color: #414d62;">
+                  <p style="font-family:monsterbold;font-size: 15px;">No Cost EMI Calculator</p>
+                  <br><br>
+                  <div style="display:flex; justify-content: space-between;">
+                    <p>Total Amount</p>
+                    <p>₹70,000</p>
+                  </div>
+                  <input list="tickmarks2" onchange="changeData(this.value)" type="range" min="1" max="4" value="1" class="form-control-range" id="formControlRange">
+                  <datalist id="tickmarks2">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                  </datalist>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p>EMI-1</p>
+                    <p>EMI-2</p>
+                    <p>EMI-3</p>
+                    <p>EMI-4</p>
+                  </div>
+                  <!--<img style="margin-top:-30px;" src="img/fees-line-1.png" width=100%>-->
+                </div>
+                <div class="col-md-6" style="padding:1.0rem; background-color: #2d3544;">
+                  <canvas id="myChart" width="400" height="400"></canvas>
+                  <br>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-6">
-            <div class="card ml-4" style="border-radius: 5px;">
+            <div class="card m-2" style="border-radius: 5px;">
               <div class="row">
-                <div class="col-md-7 text-white"
+                <div class="col-md-6 text-white"
                   style="padding:2.2rem;font-family:sweetsanspromedium; font-size:12px;background-color: #414d62;">
-                  <p style="font-family:monsterbold;font-size: 15px;">EMI Calculator</p>
-
+                  <p style="font-family:monsterbold;font-size: 15px;">Loan Calculator</p>
+                  <br>
                   <div style="display:flex; justify-content: space-between;">
-                    <p>Loan Amount</p>
-                    <p>₹60,000</p>
+                    <p>Total Amount</p>
+                    <p>₹70,000</p>
                   </div>
-                  <img style="margin-top:-30px;" src="img/fees-line-1.png" width=100%>
-
-                  <div style="display:flex; justify-content: space-between;">
-                    <p>Tenure (Years)</p>
-                    <p>4 Years</p>
+                  <input list="tickmarks" onchange="changeDataLoan(this.value)" type="range" min="1" max="4" value="1" class="form-control-range" id="formControlRange">
+                  <datalist id="tickmarks">
+                    <option value="1">6M</option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                  </datalist>
+                  <div style="display: flex; justify-content: space-between;">
+                    <p>6 M</p>
+                    <p>9 M</p>
+                    <p>12 M</p>
+                    <p>18 M</p>
                   </div>
-                  <img style="margin-top:-30px;" src="img/fees-line-2.png" width=100%>
-                  <div>Interest Amount (%)</div>
-                  <b>10%</b>
-                  <br><br>
+                  <!--<img style="margin-top:-30px;" src="img/fees-line-1.png" width=100%>-->
+                  <p style="font-family:monsterbold;font-size: 15px;">Loan Interest</p>
+                  <p>10% of Principle</p>
                 </div>
-                <div class="col-md-5" style="padding:1.8rem; background-color: #2d3544;">
-                  <img src="img/fees-piechart.png" style="width:100%;"><br>
-                  <div class="mt-3 text-white"
-                    style="font-family: sweetsanspromedium; font-size:11px; display:flex; justify-content: space-between;">
-                    <div><i class="fas fa-circle" style="color:#45b6f8; font-size:7px;"></i> PRINCIPAL <br> <b>₹
-                        2,00,000</b></div>
-                    <div><i class="fas fa-circle" style="color:red; font-size:7px;"></i> INTEREST <br> <b> &nbsp;₹
-                        20,000</b></div>
-                  </div>
+                <div class="col-md-6" style="padding:1.0rem; background-color: #2d3544;">
+                  <canvas id="myChart-loan" width="400" height="400"></canvas><br>
                 </div>
               </div>
             </div>
@@ -2500,6 +2529,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <!--custom JS-->
   <script src="js/script.js"></script>
   <script src="js/demo.js"></script>
